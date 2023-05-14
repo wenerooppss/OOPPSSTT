@@ -6,9 +6,26 @@
 #include <touchgfx/hal/Types.hpp>
 #include <touchgfx/Bitmap.hpp>
 
-const uint16_t BITMAP_ALTERNATE_THEME_IMAGES_BACKGROUNDS_320X240_POLY_ID = 0;
-const uint16_t BITMAP_ALTERNATE_THEME_IMAGES_BARS_480X272_TOP_ACTION_ID = 1;
-const uint16_t BITMAP_ALTERNATE_THEME_IMAGES_LOGOS_TOUCHGFX_ID = 2;
+const uint16_t BITMAP_ALTERNATE_THEME_IMAGES_LOGOS_TOUCHGFX_ID = 0;
+const uint16_t BITMAP_BADBULBS_ID = 1;
+const uint16_t BITMAP_BLUETOOTH_RESET_ID = 2;
+const uint16_t BITMAP_CONTROL_ID = 3;
+const uint16_t BITMAP_CURVE_ID = 4;
+const uint16_t BITMAP_DARK_PROGRESSINDICATORS_BG_LARGE_CIRCLE_INDICATOR_BG_LINE_HALF_ID = 5;
+const uint16_t BITMAP_DMX_PRESS_ID = 6;
+const uint16_t BITMAP_EXPLODE_ID = 7;
+const uint16_t BITMAP_FAN_ID = 8;
+const uint16_t BITMAP_FIREWORK_ID = 9;
+const uint16_t BITMAP_FLASH_ID = 10;
+const uint16_t BITMAP_LANGUAGE_ID = 11;
+const uint16_t BITMAP_LIGHTNING_ID = 12;
+const uint16_t BITMAP_NO_ID = 13;
+const uint16_t BITMAP_PAPARAZZI_ID = 14;
+const uint16_t BITMAP_PULSE_ID = 15;
+const uint16_t BITMAP_STUDIO_ID = 16;
+const uint16_t BITMAP_TV_ID = 17;
+const uint16_t BITMAP_UPDATE_ID = 18;
+const uint16_t BITMAP_YES_ID = 19;
 
 namespace BitmapDatabase
 {

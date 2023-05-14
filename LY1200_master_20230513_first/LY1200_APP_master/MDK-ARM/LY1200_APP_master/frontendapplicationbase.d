@@ -57,17 +57,20 @@ ly1200_app_master/frontendapplicationbase.o: \
   ..\middlewares\st\touchgfx\framework\include\common\Partition.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\transitions\NoTransition.hpp \
   ..\touchgfx\gui\include\gui\common\FrontendApplication.hpp \
-  ..\touchgfx\gui\include\gui\screencct_screen\ScreenCCTView.hpp \
-  ..\touchgfx\generated\gui_generated\include\gui_generated\screencct_screen\ScreenCCTViewBase.hpp \
+  ..\touchgfx\gui\include\gui\screenmenu_screen\ScreenMenuView.hpp \
+  ..\touchgfx\generated\gui_generated\include\gui_generated\screenmenu_screen\ScreenMenuViewBase.hpp \
   ..\middlewares\st\touchgfx\framework\include\mvp\View.hpp \
-  ..\touchgfx\gui\include\gui\screencct_screen\ScreenCCTPresenter.hpp \
+  ..\touchgfx\gui\include\gui\screenmenu_screen\ScreenMenuPresenter.hpp \
   ..\touchgfx\gui\include\gui\model\ModelListener.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Box.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextArea.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\TypedText.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\Texts.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\BoxWithBorder.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Image.hpp \
   ..\touchgfx\gui\include\gui\screen1_screen\Screen1View.hpp \
   ..\touchgfx\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp \
   ..\touchgfx\gui\include\gui\screen1_screen\Screen1Presenter.hpp \
   ..\touchgfx\generated\texts\include\texts\TextKeysAndLanguages.hpp \
-  ..\middlewares\st\touchgfx\framework\include\touchgfx\Texts.hpp \
   ..\middlewares\st\touchgfx\framework\include\platform\driver\lcd\LCD16bpp.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\lcd\LCD16DebugPrinter.hpp

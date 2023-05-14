@@ -2,38 +2,205 @@
   "Application": {
     "Screens": [
       {
-        "Name": "ScreenCCT",
+        "Name": "ScreenMenu",
         "Components": [
           {
-            "Type": "Image",
-            "Name": "image2",
-            "Y": 286,
+            "Type": "Box",
+            "Name": "box1",
             "Width": 480,
-            "Height": 34,
-            "RelativeFilename": "__generated\\alternate_theme_images_bars_480x272_top_action.png"
+            "Height": 320,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 205,
+            "Y": 10,
+            "Width": 70,
+            "Height": 40,
+            "TextId": "__SingleUse_LNQG",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_0",
+            "X": 49,
+            "Y": 69,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_1",
+            "X": 205,
+            "Y": 67,
+            "Width": 64,
+            "Height": 66,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 35,
+              "Blue": 35
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_2",
+            "X": 369,
+            "Y": 69,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_3",
+            "X": 49,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_4",
+            "X": 208,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_5",
+            "X": 369,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
           },
           {
             "Type": "Image",
-            "Name": "image3",
-            "Width": 320,
-            "Height": 240,
-            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_320x240_poly.png"
-          }
-        ],
-        "Interactions": [
+            "Name": "image_0",
+            "X": 49,
+            "Y": 69,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "control.png"
+          },
           {
-            "InteractionName": "Interaction1",
-            "Trigger": {
-              "Type": "TriggerPhysicalButtonClicked",
-              "ButtonKey": 2
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Screen1"
-            }
+            "Type": "Image",
+            "Name": "image_1",
+            "X": 205,
+            "Y": 67,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "curve.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_2",
+            "X": 369,
+            "Y": 69,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "fan.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_3",
+            "X": 49,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "studio.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_4",
+            "X": 208,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "language.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_5",
+            "X": 369,
+            "Y": 198,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "update.png"
           }
         ],
+        "Interactions": [],
         "CustomActions": [
           {
             "Name": "action1"
@@ -57,11 +224,24 @@
           {
             "Type": "Image",
             "Name": "image1",
-            "X": 214,
-            "Y": 114,
+            "X": 185,
+            "Y": 93,
             "Width": 71,
             "Height": 92,
             "RelativeFilename": "__generated\\alternate_theme_images_logos_touchgfx.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "X": 70,
+            "Y": 114,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
           }
         ],
         "Interactions": [
@@ -74,7 +254,18 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "ScreenCCT"
+              "ActionComponent": "ScreenMenu"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "box2"
             }
           }
         ]
@@ -87,7 +278,7 @@
       "Height": 320
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "ScreenCCT",
+    "StartupScreenName": "ScreenMenu",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

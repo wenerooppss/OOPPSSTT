@@ -12,8 +12,8 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/screencct_screen/ScreenCCTView.hpp>
-#include <gui/screencct_screen/ScreenCCTPresenter.hpp>
+#include <gui/screenmenu_screen/ScreenMenuView.hpp>
+#include <gui/screenmenu_screen/ScreenMenuPresenter.hpp>
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 
@@ -38,7 +38,7 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< ScreenCCTView,
+    typedef touchgfx::meta::TypeList< ScreenMenuView,
             touchgfx::meta::TypeList< Screen1View,
             touchgfx::meta::Nil >
             > GeneratedViewTypes;
@@ -52,7 +52,7 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< ScreenCCTPresenter,
+    typedef touchgfx::meta::TypeList< ScreenMenuPresenter,
             touchgfx::meta::TypeList< Screen1Presenter,
             touchgfx::meta::Nil >
             > GeneratedPresenterTypes;
@@ -77,7 +77,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoScreenCCTScreenNoTransition();
+        app.gotoScreenMenuScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

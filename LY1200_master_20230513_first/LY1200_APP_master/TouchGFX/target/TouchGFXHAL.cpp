@@ -33,7 +33,9 @@ static KeyController kc;//静态变量
 //static KnobController knc;
 
 uint32_t text_i;
-
+__IO uint16_t *ptr_get;
+__IO uint16_t *ptr_last;
+__IO uint32_t ptr_err;
 #include <touchgfx/hal/OSWrappers.hpp>
 extern "C"{
 	void TouchGFXHAL_TE(void)
@@ -174,16 +176,18 @@ void TouchGFXHAL::flushFrameBuffer(const touchgfx::Rect& rect)
 	uint32_t height;
 
 	//LCD_Address_Set(0,0,319,479);
-	//LCD_Address_Set(rect.y,rect.x,rect.y+rect.width-1,rect.x+rect.height-1);
+	//LCD_Address_Set(rect.x,rect.y,rect.x+rect.width-1,rect.y+rect.height-1);
 	
 	for(height = 0;height<rect.height; height++)
-	{
+	{		
 		ptr = getClientFrameBuffer() + rect.x + (height + rect.y) * HAL::DISPLAY_WIDTH;
-		LCD_Address_Set(rect.x,height,rect.x+rect.width-1,rect.y+rect.height-1);
-		
+
+		LCD_Address_Set(rect.x,height+rect.y,rect.x+rect.width-1,rect.y+height);
+		//LCD_Address_Set(0,height,479,height);
+//		
 		LCD_IO_WriteMultipleData_User((uint16_t *)ptr, rect.width);
-		
-		text_i=height;
+//		
+//		text_i=height;
 		
 	}
 	

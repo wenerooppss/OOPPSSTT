@@ -172,18 +172,6 @@
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
       <UniqueIdentifier>65C5D5AF-7A18-B994-C900-0418AAA21747</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\screencct_screen">
-      <UniqueIdentifier>8AD19EA0-F117-5F48-FDAE-268A460FBE60</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\screencct_screen">
-      <UniqueIdentifier>D8BA7A9D-9A5C-9CAB-8136-8AB87FAF394B</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screencct_screen">
-      <UniqueIdentifier>D563B99C-B3DB-6CAE-AF69-526E0705F561</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screencct_screen">
-      <UniqueIdentifier>F458D925-9369-F9DE-B35B-ED3CFFB2AC15</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\gui\screen1_screen">
       <UniqueIdentifier>45DB0E5B-53C4-13DD-3E79-B883B55F2CFD</UniqueIdentifier>
     </Filter>
@@ -195,6 +183,18 @@
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\screen1_screen">
       <UniqueIdentifier>93901997-67BA-4548-929D-B60DD2F6EEA8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screenmenu_screen">
+      <UniqueIdentifier>CCAF590D-53A4-D3B6-E2DD-88257E3103E2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screenmenu_screen">
+      <UniqueIdentifier>8CD56C63-C6C0-8E20-CC12-AE4AC8500A57</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screenmenu_screen">
+      <UniqueIdentifier>29F88CEB-1FAD-5215-1E17-4567B88F3332</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screenmenu_screen">
+      <UniqueIdentifier>A49D75DB-6C7A-B5C4-EA23-F01D4553FA9A</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -228,15 +228,6 @@
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\screencct_screen\ScreenCCTPresenter.cpp">
-      <Filter>Source Files\gui\screencct_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screencct_screen\ScreenCCTView.cpp">
-      <Filter>Source Files\gui\screencct_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screencct_screen\ScreenCCTViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screencct_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp">
       <Filter>Source Files\gui\screen1_screen</Filter>
     </ClCompile>
@@ -245,6 +236,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen1_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenmenu_screen\ScreenMenuPresenter.cpp">
+      <Filter>Source Files\gui\screenmenu_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenmenu_screen\ScreenMenuView.cpp">
+      <Filter>Source Files\gui\screenmenu_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screenmenu_screen\ScreenMenuViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screenmenu_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -688,15 +688,6 @@
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screencct_screen\ScreenCCTPresenter.hpp">
-      <Filter>Header Files\gui\screencct_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screencct_screen\ScreenCCTView.hpp">
-      <Filter>Header Files\gui\screencct_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screencct_screen\ScreenCCTViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screencct_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp">
       <Filter>Header Files\gui\screen1_screen</Filter>
     </ClInclude>
@@ -705,6 +696,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen1_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenmenu_screen\ScreenMenuPresenter.hpp">
+      <Filter>Header Files\gui\screenmenu_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenmenu_screen\ScreenMenuView.hpp">
+      <Filter>Header Files\gui\screenmenu_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screenmenu_screen\ScreenMenuViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screenmenu_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

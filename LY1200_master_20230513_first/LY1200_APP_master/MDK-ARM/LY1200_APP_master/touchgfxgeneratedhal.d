@@ -59,12 +59,16 @@ ly1200_app_master/touchgfxgeneratedhal.o: \
   ..\middlewares\st\touchgfx\framework\include\mvp\Presenter.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\Screen.hpp \
   ..\touchgfx\gui\include\gui\model\Model.hpp \
-  ..\touchgfx\gui\include\gui\screencct_screen\ScreenCCTView.hpp \
-  ..\touchgfx\generated\gui_generated\include\gui_generated\screencct_screen\ScreenCCTViewBase.hpp \
+  ..\touchgfx\gui\include\gui\screenmenu_screen\ScreenMenuView.hpp \
+  ..\touchgfx\generated\gui_generated\include\gui_generated\screenmenu_screen\ScreenMenuViewBase.hpp \
   ..\middlewares\st\touchgfx\framework\include\mvp\View.hpp \
-  ..\touchgfx\gui\include\gui\screencct_screen\ScreenCCTPresenter.hpp \
+  ..\touchgfx\gui\include\gui\screenmenu_screen\ScreenMenuPresenter.hpp \
   ..\touchgfx\gui\include\gui\model\ModelListener.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Box.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextArea.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\TypedText.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\Texts.hpp \
+  ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\BoxWithBorder.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\Image.hpp \
   ..\touchgfx\gui\include\gui\screen1_screen\Screen1View.hpp \
   ..\touchgfx\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp \

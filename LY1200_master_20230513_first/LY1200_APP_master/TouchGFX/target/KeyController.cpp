@@ -5,10 +5,20 @@
 #include "task.h"
 #include "main.h"
 #include "cmsis_os.h"
-
+#include "math.h"
+#include <iostream>
+using namespace std;
 extern osMessageQueueId_t boxInputQueueHandle;
 
 using namespace touchgfx;
+
+namespace touchgfx {//定义在命名空间
+	int component_Location=0;//组件位置i
+	int tier_Location=0;//层级位置j
+//	int Knob_Pressed=0;//按下标志
+	int Screen_id=00000;//界面标识
+}
+
 void  KeyController::init ()//初始化
 {}
 	
@@ -47,36 +57,55 @@ bool KeyController::sample(uint8_t & key)
     }		
 		
 		if(return_Flag==true)
-		{
-			if(box_Data_Local.key.value==KEY2_Pin_SET || box_Data_Local.key.value==KEY3_Pin_SET || box_Data_Local.key.value==KEY6_Pin_SET) {
-					key= box_Data_Local.key.value;			
-			}
+		{	
+			
+			//KNOB1
+		 if(box_Data_Local.knob1.variation!=0){//variation右转正加，左转负减，不转为0													
+					component_Location+=1; //box_Data_Local.knob1.variation;		
+			    key=component_Location;
+		//	  	key= min(max(0,component_Location),6);//设组件范围
+		 }		 
+		  
+       
+				
+			
+//			else if(box_Data_Local.knob1.key_State==KNOB_STATE_SET){ //旋钮被按下
+//				
+//					tier_Location+=1;//界面层级加一
+//				//	Knob_Pressed=1;//旋钮按下标志位
+//					box_Data_Local.knob1.key_State=KNOB_STATE_RESET; //按下状态复位	
+//    			component_Location=0;//层级改变之后，将组件的位置i清零  	
+//			  	key=+10;	 
+//				  }
+//				// else{
+//				//	Knob_Pressed=0;
+//				// }
+			
+//        Screen_id= My_Place();//位置？？
+
+			
+				 
+				 
+		 //KEY236		
+//		 if(box_Data_Local.key.value==KEY2_Pin_SET || box_Data_Local.key.value==KEY3_Pin_SET || box_Data_Local.key.value==KEY6_Pin_SET) {
+//				Screen_id=00000; //将唯一标识符清零，然后用key=2(menu),key=3(cct),key=6(effect)	
+//				key='0'+box_Data_Local.key.value;			
+//			}
+
+			
+			
+			
     }
 	return return_Flag;
 }
 
-//#include <KeyController.hpp>
-//#include "key.h" 
 
-//using namespace touchgfx;
-
-//void  KeyController::init ()//初始化
-//{}
-
-//extern "C"
-//{
-// struct KEY_TYPE button_scanning();
+//int My_Place()	
+//{	  
+//		int tier; //指数运算的值
+//	  tier=pow(10,(3-tier_Location));//3为最大层级-1（4-1）
+//    Screen_id = Screen_id+key_State*10000+component_Location*tier;	
+//	   
+//	  
+//	  return Screen_id;
 //}
-
-
-//	bool KeyController::sample(uint8_t & key) {
-//		//采样 是否被按下
-//	  struct KEY_TYPE key_driver;
-//		key_driver = button_scanning ();
-//		if(key_driver.key_state==KEY_STATE_SET ){
-//			key=key_driver.key_value;
-//			return true;
-//	  }	
-//		return false;
-//	}
-
