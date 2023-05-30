@@ -1,0 +1,874 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "ScreenMenu",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 320,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 205,
+            "Y": 10,
+            "Width": 70,
+            "Height": 40,
+            "TextId": "__SingleUse_LNQG",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_0",
+            "X": 49,
+            "Y": 69,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_1",
+            "X": 205,
+            "Y": 67,
+            "Width": 64,
+            "Height": 66,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 35,
+              "Blue": 35
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_2",
+            "X": 369,
+            "Y": 69,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_3",
+            "X": 49,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_4",
+            "X": 208,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_5",
+            "X": 369,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 4
+          },
+          {
+            "Type": "Image",
+            "Name": "image_0",
+            "X": 49,
+            "Y": 69,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "control.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_1",
+            "X": 205,
+            "Y": 67,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "curve.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_2",
+            "X": 369,
+            "Y": 69,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "fan.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_3",
+            "X": 49,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "studio.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_4",
+            "X": 208,
+            "Y": 200,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "language.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_5",
+            "X": 369,
+            "Y": 198,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "update.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 10
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 11
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenCurve"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 12
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenEffect"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action1"
+          }
+        ]
+      },
+      {
+        "Name": "Screen1",
+        "CanvasBufferSize": 7200,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 320,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 214,
+            "Y": 13,
+            "Width": 53,
+            "Height": 40,
+            "TextId": "__SingleUse_VFHT",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 87,
+            "Y": 43,
+            "Width": 50,
+            "Height": 29,
+            "TextId": "__SingleUse_80PN",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 341,
+            "Y": 43,
+            "Width": 50,
+            "Height": 29,
+            "TextId": "__SingleUse_CP7Q",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "CircleProgress",
+            "Name": "LightingProgress",
+            "X": 17,
+            "Y": 96,
+            "Width": 190,
+            "Height": 190,
+            "Color": {
+              "Red": 149,
+              "Green": 225,
+              "Blue": 230
+            },
+            "CenterX": 95.0,
+            "CenterY": 95.0,
+            "Radius": 85.0,
+            "LineWidth": 20.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_large.png",
+            "ProgressRangeMax": 100,
+            "ProgressRangeSteps": 100,
+            "ProgressInitialValue": 15
+          },
+          {
+            "Type": "CircleProgress",
+            "Name": "TemperatureProgress",
+            "X": 267,
+            "Y": 113,
+            "Width": 184,
+            "Height": 94,
+            "Color": {
+              "Red": 219,
+              "Green": 185,
+              "Blue": 31
+            },
+            "CenterX": 91.5,
+            "CenterY": 95.0,
+            "Radius": 85.0,
+            "LineWidth": 17.0,
+            "StartAngle": -90.0,
+            "EndAngle": 90.0,
+            "CapPrecision": "Butt",
+            "FileNameBackground": "Dark_ProgressIndicators_bg_large_circle_indicator_bg_line_half.png",
+            "ProgressRangeMin": 2700,
+            "ProgressRangeMax": 6500,
+            "ProgressRangeSteps": 76,
+            "ProgressInitialValue": 2700
+          },
+          {
+            "Type": "TextArea",
+            "Name": "TemperatureTextPg",
+            "X": 328,
+            "Y": 184,
+            "Width": 63,
+            "Height": 29,
+            "TextId": "__SingleUse_QIPC",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_7APG",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "LightTextPg",
+            "X": 62,
+            "Y": 172,
+            "Width": 87,
+            "Height": 39,
+            "TextId": "__SingleUse_ZI7U",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 247,
+              "Blue": 247
+            },
+            "AutoSize": true,
+            "LineSpacing": 10,
+            "Wildcard1": {
+              "TextId": "__SingleUse_1NZU",
+              "UseBuffer": true,
+              "BufferSize": 8
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenMenu"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ScreenCurve",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 320,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 170,
+            "Y": 18,
+            "Width": 140,
+            "Height": 40,
+            "TextId": "__SingleUse_T7S8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_0",
+            "X": 106,
+            "Y": 90,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_1",
+            "X": 299,
+            "Y": 90,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_2",
+            "X": 106,
+            "Y": 197,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_3",
+            "X": 299,
+            "Y": 197,
+            "Width": 64,
+            "Height": 64,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 5
+          },
+          {
+            "Type": "Image",
+            "Name": "image_0",
+            "X": 106,
+            "Y": 90,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "curve.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_1",
+            "X": 299,
+            "Y": 90,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "curve.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_2",
+            "X": 106,
+            "Y": 197,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "curve.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_3",
+            "X": 299,
+            "Y": 197,
+            "Width": 64,
+            "Height": 64,
+            "RelativeFilename": "curve.png"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "ScreenEffect",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 320,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 205,
+            "Y": 14,
+            "Width": 70,
+            "Height": 40,
+            "TextId": "__SingleUse_5TCC",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_0",
+            "X": 44,
+            "Y": 80,
+            "Width": 48,
+            "Height": 48,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 3
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_1",
+            "X": 157,
+            "Y": 80,
+            "Width": 48,
+            "Height": 48,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 3
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_2",
+            "X": 268,
+            "Y": 80,
+            "Width": 48,
+            "Height": 48,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 3
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_3",
+            "X": 378,
+            "Y": 80,
+            "Width": 48,
+            "Height": 48,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 3
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_4",
+            "X": 44,
+            "Y": 183,
+            "Width": 48,
+            "Height": 48,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 3
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_5",
+            "X": 157,
+            "Y": 183,
+            "Width": 48,
+            "Height": 48,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 3
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_6",
+            "X": 268,
+            "Y": 183,
+            "Width": 48,
+            "Height": 48,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 3
+          },
+          {
+            "Type": "BoxWithBorder",
+            "Name": "box_7",
+            "X": 378,
+            "Y": 183,
+            "Width": 48,
+            "Height": 48,
+            "Visible": false,
+            "Color": {
+              "Red": 41,
+              "Green": 36,
+              "Blue": 36
+            },
+            "BorderColor": {
+              "Green": 179,
+              "Blue": 255
+            },
+            "BorderSize": 3
+          },
+          {
+            "Type": "Image",
+            "Name": "image_0",
+            "X": 44,
+            "Y": 80,
+            "Width": 48,
+            "Height": 48,
+            "RelativeFilename": "badBulbs.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_1",
+            "X": 157,
+            "Y": 80,
+            "Width": 48,
+            "Height": 48,
+            "RelativeFilename": "explode.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_2",
+            "X": 268,
+            "Y": 80,
+            "Width": 48,
+            "Height": 48,
+            "RelativeFilename": "firework.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_3",
+            "X": 378,
+            "Y": 80,
+            "Width": 48,
+            "Height": 48,
+            "RelativeFilename": "flash.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_4",
+            "X": 44,
+            "Y": 183,
+            "Width": 48,
+            "Height": 48,
+            "RelativeFilename": "lightning.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_5",
+            "X": 157,
+            "Y": 183,
+            "Width": 48,
+            "Height": 48,
+            "RelativeFilename": "paparazzi.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_6",
+            "X": 268,
+            "Y": 183,
+            "Width": 48,
+            "Height": 48,
+            "RelativeFilename": "pulse.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image_7",
+            "X": 373,
+            "Y": 183,
+            "Width": 59,
+            "Height": 48,
+            "RelativeFilename": "tv.png"
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 480,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "ScreenMenu",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F407/417",
+    "Toolchain": "MDK-ARM V5.32",
+    "Platform": "m4",
+    "ProjectFile": "../LY1200_APP_master.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.21.1"
+}

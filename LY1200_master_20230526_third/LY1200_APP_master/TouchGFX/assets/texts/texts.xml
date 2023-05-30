@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.21.3">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_5TCC" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">特效</Translation>
+      </Text>
+      <Text Id="__SingleUse_1NZU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"> 15</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZI7U" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"> &lt;value&gt; % </Translation>
+      </Text>
+      <Text Id="__SingleUse_7APG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">2700</Translation>
+      </Text>
+      <Text Id="__SingleUse_QIPC" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;K</Translation>
+      </Text>
+      <Text Id="__SingleUse_CP7Q" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">色温</Translation>
+      </Text>
+      <Text Id="__SingleUse_80PN" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">亮度</Translation>
+      </Text>
+      <Text Id="__SingleUse_VFHT" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">CCT</Translation>
+      </Text>
+      <Text Id="__SingleUse_T7S8" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">调光曲线</Translation>
+      </Text>
+      <Text Id="__SingleUse_LNQG" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">菜单</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="simfang.ttf" Size="25" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters=". %" WildcardCharacterRanges="0-9" />
+    <Typography Id="Large" Font="simfang.ttf" Size="35" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="." WildcardCharacterRanges="0-9" />
+    <Typography Id="Small" Font="simfang.ttf" Size="17" Bpp="4" Direction="LTR" FallbackCharacter="?" WildcardCharacters="." WildcardCharacterRanges="0-9" />
+  </Typographies>
+</TextDatabase>
