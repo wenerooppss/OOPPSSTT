@@ -1,7 +1,7 @@
 #include <gui/model/Model.hpp>
 #include <gui/model/ModelListener.hpp>
 
-Model::Model() : modelListener(0),Temperature_count(2700),Light_count(15)
+Model::Model() : modelListener(0),Light_count(15),Temperature_count(2700),Frequency_count(1)
 {
 
 }

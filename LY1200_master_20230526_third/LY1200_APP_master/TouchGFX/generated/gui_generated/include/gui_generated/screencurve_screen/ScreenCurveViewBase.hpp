@@ -34,6 +34,10 @@ protected:
     touchgfx::BoxWithBorder box_1;
     touchgfx::BoxWithBorder box_2;
     touchgfx::BoxWithBorder box_3;
+    touchgfx::TextArea textArea2;
+    touchgfx::TextArea textArea2_2;
+    touchgfx::TextArea textArea2_3;
+    touchgfx::TextArea textArea2_1;
     touchgfx::Image image_0;
     touchgfx::Image image_1;
     touchgfx::Image image_2;

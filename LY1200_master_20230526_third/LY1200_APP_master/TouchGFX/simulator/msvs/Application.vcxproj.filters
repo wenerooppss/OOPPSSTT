@@ -220,6 +220,102 @@
     <Filter Include="Source Files\generated\gui_generated\screeneffect_screen">
       <UniqueIdentifier>7E11A5BF-FFDC-23C1-E7D5-93118B059A09</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\screeneffectset_screen">
+      <UniqueIdentifier>6253950C-BD34-BA40-82EE-93D3D62575B6</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screeneffectset_screen">
+      <UniqueIdentifier>A2EADF2A-93EB-0251-6E0E-02687745490E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screeneffectset_screen">
+      <UniqueIdentifier>B6130444-9CD7-D77A-FE09-B0577EF24283</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screeneffectset_screen">
+      <UniqueIdentifier>C30F3320-49B8-8343-58FF-6DDC63323A0F</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screencontrol_screen">
+      <UniqueIdentifier>9868FBB7-AD38-A52C-03C3-2C428AB35609</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screencontrol_screen">
+      <UniqueIdentifier>2781B8AD-0463-52BB-1855-41D9D219DE54</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screenfan_screen">
+      <UniqueIdentifier>AB9BA4E5-8752-95FC-B14F-4C61F04E24D7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screenfan_screen">
+      <UniqueIdentifier>36B6E26A-2479-97AE-5C2E-31F43143C720</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screenlanguage_screen">
+      <UniqueIdentifier>2B3B408B-171D-F0A9-23CD-832B61D4AAD6</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screenlanguage_screen">
+      <UniqueIdentifier>9CD310AB-652B-6CFC-967C-A3AE65475E50</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screenupdate_screen">
+      <UniqueIdentifier>9943A6E9-D1E5-749F-298F-E806F7029627</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screenupdate_screen">
+      <UniqueIdentifier>5A2E5675-01A2-56F8-AAE9-D3DFB5AAF34C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screenbluetooth_screen">
+      <UniqueIdentifier>91F1068D-6AE3-1E96-BF20-4FC727316F6D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screendmx_screen">
+      <UniqueIdentifier>12662CE9-C13A-E28F-4EBB-755F6B7471EF</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screendmx_screen">
+      <UniqueIdentifier>7588D29D-1644-084B-C6D4-188686EAA5F6</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screenbluetooth_screen">
+      <UniqueIdentifier>32B9DD79-4EA8-2670-EB1F-2271AE0F2058</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screenstudio_screen">
+      <UniqueIdentifier>8BEB0019-E36E-03DA-ECE1-C7D93DBCD9FB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\screenstudio_screen">
+      <UniqueIdentifier>F68F2535-8783-5EED-693A-259C7A57C5FC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screenstudio_screen">
+      <UniqueIdentifier>D4F629CA-0B8E-9913-5C1E-86E4234AC3CF</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screenstudio_screen">
+      <UniqueIdentifier>FB08897F-3CF7-4CA7-839D-74B851E1E385</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screenbluetooth_screen">
+      <UniqueIdentifier>74CA7C23-9BC5-3F29-F407-5A69BBED33CE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screencontrol_screen">
+      <UniqueIdentifier>CD47B665-6832-A982-F04A-67D0AD33B7F8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screenlanguage_screen">
+      <UniqueIdentifier>EFD45EB3-8CA9-C201-D161-C10F5AC2C452</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screendmx_screen">
+      <UniqueIdentifier>72EF5866-42A9-4BD2-18F9-987B9BD4C3EE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screenlanguage_screen">
+      <UniqueIdentifier>73147295-D06A-4DDA-7803-551D45089A91</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screencontrol_screen">
+      <UniqueIdentifier>D3CDF150-001D-F3B8-74A3-1BFCC6C15835</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screendmx_screen">
+      <UniqueIdentifier>6F380E0A-7EDD-8568-C00F-BD30FA0FAAA9</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screenupdate_screen">
+      <UniqueIdentifier>CC0B3BDF-346A-DDF4-43F0-5C20B47FA174</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screenbluetooth_screen">
+      <UniqueIdentifier>F95D5CDD-8C6C-3F16-0350-599760C8F7FC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screenupdate_screen">
+      <UniqueIdentifier>82912435-0DB5-328C-F4B6-55FECA375202</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screenfan_screen">
+      <UniqueIdentifier>990EC6A1-1844-DF16-BF27-5E0E4D4FF337</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screenfan_screen">
+      <UniqueIdentifier>04F7C71A-7658-925D-DC91-27ECB20519C6</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -287,6 +383,78 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screeneffect_screen\ScreenEffectViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screeneffect_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screeneffectset_screen\ScreenEffectSetPresenter.cpp">
+      <Filter>Source Files\gui\screeneffectset_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screeneffectset_screen\ScreenEffectSetView.cpp">
+      <Filter>Source Files\gui\screeneffectset_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screeneffectset_screen\ScreenEffectSetViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screeneffectset_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenbluetooth_screen\ScreenBluetoothPresenter.cpp">
+      <Filter>Source Files\gui\screenbluetooth_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenbluetooth_screen\ScreenBluetoothView.cpp">
+      <Filter>Source Files\gui\screenbluetooth_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screenbluetooth_screen\ScreenBluetoothViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screenbluetooth_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screencontrol_screen\ScreenControlPresenter.cpp">
+      <Filter>Source Files\gui\screencontrol_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screencontrol_screen\ScreenControlView.cpp">
+      <Filter>Source Files\gui\screencontrol_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screencontrol_screen\ScreenControlViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screencontrol_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screendmx_screen\ScreenDMXPresenter.cpp">
+      <Filter>Source Files\gui\screendmx_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screendmx_screen\ScreenDMXView.cpp">
+      <Filter>Source Files\gui\screendmx_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screendmx_screen\ScreenDMXViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screendmx_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenfan_screen\ScreenFanPresenter.cpp">
+      <Filter>Source Files\gui\screenfan_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenfan_screen\ScreenFanView.cpp">
+      <Filter>Source Files\gui\screenfan_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screenfan_screen\ScreenFanViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screenfan_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenlanguage_screen\ScreenLanguagePresenter.cpp">
+      <Filter>Source Files\gui\screenlanguage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenlanguage_screen\ScreenLanguageView.cpp">
+      <Filter>Source Files\gui\screenlanguage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screenlanguage_screen\ScreenLanguageViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screenlanguage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenstudio_screen\ScreenStudioPresenter.cpp">
+      <Filter>Source Files\gui\screenstudio_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenstudio_screen\ScreenStudioView.cpp">
+      <Filter>Source Files\gui\screenstudio_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screenstudio_screen\ScreenStudioViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screenstudio_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenupdate_screen\ScreenUpdatePresenter.cpp">
+      <Filter>Source Files\gui\screenupdate_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screenupdate_screen\ScreenUpdateView.cpp">
+      <Filter>Source Files\gui\screenupdate_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screenupdate_screen\ScreenUpdateViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screenupdate_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -765,6 +933,78 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screeneffect_screen\ScreenEffectViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screeneffect_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screeneffectset_screen\ScreenEffectSetPresenter.hpp">
+      <Filter>Header Files\gui\screeneffectset_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screeneffectset_screen\ScreenEffectSetView.hpp">
+      <Filter>Header Files\gui\screeneffectset_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screeneffectset_screen\ScreenEffectSetViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screeneffectset_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenbluetooth_screen\ScreenBluetoothPresenter.hpp">
+      <Filter>Header Files\gui\screenbluetooth_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenbluetooth_screen\ScreenBluetoothView.hpp">
+      <Filter>Header Files\gui\screenbluetooth_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screenbluetooth_screen\ScreenBluetoothViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screenbluetooth_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screencontrol_screen\ScreenControlPresenter.hpp">
+      <Filter>Header Files\gui\screencontrol_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screencontrol_screen\ScreenControlView.hpp">
+      <Filter>Header Files\gui\screencontrol_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screencontrol_screen\ScreenControlViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screencontrol_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screendmx_screen\ScreenDMXPresenter.hpp">
+      <Filter>Header Files\gui\screendmx_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screendmx_screen\ScreenDMXView.hpp">
+      <Filter>Header Files\gui\screendmx_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screendmx_screen\ScreenDMXViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screendmx_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenfan_screen\ScreenFanPresenter.hpp">
+      <Filter>Header Files\gui\screenfan_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenfan_screen\ScreenFanView.hpp">
+      <Filter>Header Files\gui\screenfan_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screenfan_screen\ScreenFanViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screenfan_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenlanguage_screen\ScreenLanguagePresenter.hpp">
+      <Filter>Header Files\gui\screenlanguage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenlanguage_screen\ScreenLanguageView.hpp">
+      <Filter>Header Files\gui\screenlanguage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screenlanguage_screen\ScreenLanguageViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screenlanguage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenstudio_screen\ScreenStudioPresenter.hpp">
+      <Filter>Header Files\gui\screenstudio_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenstudio_screen\ScreenStudioView.hpp">
+      <Filter>Header Files\gui\screenstudio_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screenstudio_screen\ScreenStudioViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screenstudio_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenupdate_screen\ScreenUpdatePresenter.hpp">
+      <Filter>Header Files\gui\screenupdate_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screenupdate_screen\ScreenUpdateView.hpp">
+      <Filter>Header Files\gui\screenupdate_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screenupdate_screen\ScreenUpdateViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screenupdate_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

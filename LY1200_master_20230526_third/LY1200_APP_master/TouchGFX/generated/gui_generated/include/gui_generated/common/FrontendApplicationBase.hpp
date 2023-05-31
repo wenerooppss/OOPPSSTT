@@ -26,11 +26,29 @@ public:
     // Screen1
     void gotoScreen1ScreenNoTransition();
 
+    // ScreenFan
+    void gotoScreenFanScreenNoTransition();
+
     // ScreenCurve
     void gotoScreenCurveScreenNoTransition();
 
     // ScreenEffect
     void gotoScreenEffectScreenNoTransition();
+
+    // ScreenEffectSet
+    void gotoScreenEffectSetScreenNoTransition();
+
+    // ScreenControl
+    void gotoScreenControlScreenNoTransition();
+
+    // ScreenLanguage
+    void gotoScreenLanguageScreenNoTransition();
+
+    // ScreenStudio
+    void gotoScreenStudioScreenNoTransition();
+
+    // ScreenUpdate
+    void gotoScreenUpdateScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -43,11 +61,29 @@ protected:
     // Screen1
     void gotoScreen1ScreenNoTransitionImpl();
 
+    // ScreenFan
+    void gotoScreenFanScreenNoTransitionImpl();
+
     // ScreenCurve
     void gotoScreenCurveScreenNoTransitionImpl();
 
     // ScreenEffect
     void gotoScreenEffectScreenNoTransitionImpl();
+
+    // ScreenEffectSet
+    void gotoScreenEffectSetScreenNoTransitionImpl();
+
+    // ScreenControl
+    void gotoScreenControlScreenNoTransitionImpl();
+
+    // ScreenLanguage
+    void gotoScreenLanguageScreenNoTransitionImpl();
+
+    // ScreenStudio
+    void gotoScreenStudioScreenNoTransitionImpl();
+
+    // ScreenUpdate
+    void gotoScreenUpdateScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

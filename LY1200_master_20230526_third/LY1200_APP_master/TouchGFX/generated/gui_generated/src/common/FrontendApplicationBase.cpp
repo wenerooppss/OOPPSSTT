@@ -13,10 +13,26 @@
 #include <gui/screenmenu_screen/ScreenMenuPresenter.hpp>
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/screenfan_screen/ScreenFanView.hpp>
+#include <gui/screenfan_screen/ScreenFanPresenter.hpp>
 #include <gui/screencurve_screen/ScreenCurveView.hpp>
 #include <gui/screencurve_screen/ScreenCurvePresenter.hpp>
 #include <gui/screeneffect_screen/ScreenEffectView.hpp>
 #include <gui/screeneffect_screen/ScreenEffectPresenter.hpp>
+#include <gui/screeneffectset_screen/ScreenEffectSetView.hpp>
+#include <gui/screeneffectset_screen/ScreenEffectSetPresenter.hpp>
+#include <gui/screencontrol_screen/ScreenControlView.hpp>
+#include <gui/screencontrol_screen/ScreenControlPresenter.hpp>
+#include <gui/screendmx_screen/ScreenDMXView.hpp>
+#include <gui/screendmx_screen/ScreenDMXPresenter.hpp>
+#include <gui/screenbluetooth_screen/ScreenBluetoothView.hpp>
+#include <gui/screenbluetooth_screen/ScreenBluetoothPresenter.hpp>
+#include <gui/screenlanguage_screen/ScreenLanguageView.hpp>
+#include <gui/screenlanguage_screen/ScreenLanguagePresenter.hpp>
+#include <gui/screenstudio_screen/ScreenStudioView.hpp>
+#include <gui/screenstudio_screen/ScreenStudioPresenter.hpp>
+#include <gui/screenupdate_screen/ScreenUpdateView.hpp>
+#include <gui/screenupdate_screen/ScreenUpdatePresenter.hpp>
 
 using namespace touchgfx;
 
@@ -61,6 +77,19 @@ void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()
     touchgfx::makeTransition<Screen1View, Screen1Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
+// ScreenFan
+
+void FrontendApplicationBase::gotoScreenFanScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreenFanScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenFanScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ScreenFanView, ScreenFanPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
 // ScreenCurve
 
 void FrontendApplicationBase::gotoScreenCurveScreenNoTransition()
@@ -85,4 +114,69 @@ void FrontendApplicationBase::gotoScreenEffectScreenNoTransition()
 void FrontendApplicationBase::gotoScreenEffectScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<ScreenEffectView, ScreenEffectPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// ScreenEffectSet
+
+void FrontendApplicationBase::gotoScreenEffectSetScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreenEffectSetScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenEffectSetScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ScreenEffectSetView, ScreenEffectSetPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// ScreenControl
+
+void FrontendApplicationBase::gotoScreenControlScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreenControlScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenControlScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ScreenControlView, ScreenControlPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// ScreenLanguage
+
+void FrontendApplicationBase::gotoScreenLanguageScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreenLanguageScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenLanguageScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ScreenLanguageView, ScreenLanguagePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// ScreenStudio
+
+void FrontendApplicationBase::gotoScreenStudioScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreenStudioScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenStudioScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ScreenStudioView, ScreenStudioPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// ScreenUpdate
+
+void FrontendApplicationBase::gotoScreenUpdateScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreenUpdateScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenUpdateScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ScreenUpdateView, ScreenUpdatePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

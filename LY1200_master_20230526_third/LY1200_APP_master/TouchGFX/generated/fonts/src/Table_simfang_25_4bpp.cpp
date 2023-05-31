@@ -18,11 +18,31 @@ KEEP extern const touchgfx::GlyphNode glyphs_simfang_25_4bpp[] FONT_TABLE_LOCATI
     {   790, 0x0038,  10,  16,  16,   1,  13,   0,   0, 0x00 },
     {   870, 0x0039,  10,  16,  16,   1,  13,   0,   0, 0x00 },
     {   950, 0x003F,  11,  16,  16,   1,  13,   0,   0, 0x00 },
-    {  1046, 0x004B,  12,  16,  16,   0,  13,   0,   0, 0x00 },
-    {     0, 0x4EAE,  21,  24,  21,   2,  25,   0,   0, 0x00 },
-    {     0, 0x5EA6,  22,  24,  21,   1,  25,   0,   0, 0x00 },
-    {     0, 0x6E29,  22,  22,  20,   1,  25,   0,   0, 0x00 },
-    {     0, 0x8272,  21,  22,  20,   2,  25,   0,   0, 0x00 }
+    {  1046, 0x0044,  12,  16,  16,   0,  13,   0,   0, 0x00 },
+    {  1142, 0x004B,  12,  16,  16,   0,  13,   0,   0, 0x00 },
+    {  1238, 0x004D,  13,  16,  16,   0,  13,   0,   0, 0x00 },
+    {  1350, 0x0053,  10,  16,  16,   1,  13,   0,   0, 0x00 },
+    {  1430, 0x0058,  12,  16,  16,   0,  13,   0,   0, 0x00 },
+    {     0, 0x4E2D,  17,  24,  21,   4,  25,   0,   0, 0x00 },
+    {   216, 0x4EAE,  21,  24,  21,   2,  25,   0,   0, 0x00 },
+    {     0, 0x578B,  21,  23,  21,   2,  25,   0,   0, 0x00 },
+    {     0, 0x5BF9,  22,  24,  21,   2,  25,   0,   0, 0x00 },
+    {   264, 0x5EA6,  22,  24,  21,   1,  25,   0,   0, 0x00 },
+    {   528, 0x5F0F,  21,  24,  21,   2,  25,   0,   0, 0x00 },
+    {     0, 0x6307,  22,  24,  21,   1,  25,   0,   0, 0x00 },
+    {   264, 0x6570,  23,  24,  21,   1,  25,   0,   0, 0x00 },
+    {   552, 0x667A,  21,  24,  21,   1,  25,   0,   0, 0x00 },
+    {     0, 0x6A21,  23,  24,  21,   1,  25,   0,   0, 0x00 },
+    {   288, 0x6E29,  22,  22,  20,   1,  25,   0,   0, 0x00 },
+    {     0, 0x7259,  21,  22,  19,   2,  25,   0,   0, 0x00 },
+    {     0, 0x7EBF,  21,  24,  21,   2,  25,   0,   0, 0x00 },
+    {     0, 0x80FD,  20,  23,  21,   3,  25,   0,   0, 0x00 },
+    {   230, 0x8272,  21,  22,  20,   2,  25,   0,   0, 0x00 },
+    {   472, 0x84DD,  21,  23,  21,   2,  25,   0,   0, 0x00 },
+    {     0, 0x901F,  23,  24,  21,   1,  25,   0,   0, 0x00 },
+    {   288, 0x9759,  22,  24,  21,   2,  25,   0,   0, 0x00 },
+    {   552, 0x97F3,  20,  24,  21,   3,  25,   0,   0, 0x00 },
+    {     0, 0x9AD8,  21,  24,  21,   2,  25,   0,   0, 0x00 }
 };
 
 // simfang_25_4bpp
@@ -33,11 +53,23 @@ KEEP extern const uint8_t unicodes_simfang_25_4bpp_0[] FONT_GLYPH_LOCATION_FLASH
 FONT_GLYPH_LOCATION_FLASH_PRAGMA
 KEEP extern const uint8_t unicodes_simfang_25_4bpp_9[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
 FONT_GLYPH_LOCATION_FLASH_PRAGMA
+KEEP extern const uint8_t unicodes_simfang_25_4bpp_10[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
+FONT_GLYPH_LOCATION_FLASH_PRAGMA
 KEEP extern const uint8_t unicodes_simfang_25_4bpp_11[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
+FONT_GLYPH_LOCATION_FLASH_PRAGMA
+KEEP extern const uint8_t unicodes_simfang_25_4bpp_12[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
 FONT_GLYPH_LOCATION_FLASH_PRAGMA
 KEEP extern const uint8_t unicodes_simfang_25_4bpp_13[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
 FONT_GLYPH_LOCATION_FLASH_PRAGMA
+KEEP extern const uint8_t unicodes_simfang_25_4bpp_14[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
+FONT_GLYPH_LOCATION_FLASH_PRAGMA
+KEEP extern const uint8_t unicodes_simfang_25_4bpp_15[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
+FONT_GLYPH_LOCATION_FLASH_PRAGMA
 KEEP extern const uint8_t unicodes_simfang_25_4bpp_16[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
+FONT_GLYPH_LOCATION_FLASH_PRAGMA
+KEEP extern const uint8_t unicodes_simfang_25_4bpp_18[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
+FONT_GLYPH_LOCATION_FLASH_PRAGMA
+KEEP extern const uint8_t unicodes_simfang_25_4bpp_19[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
 FONT_SEARCHTABLE_LOCATION_FLASH_PRAGMA
 KEEP extern const uint8_t* const unicodes_simfang_25_4bpp[] FONT_SEARCHTABLE_LOCATION_FLASH_ATTRIBUTE = {
     unicodes_simfang_25_4bpp_0,
@@ -50,13 +82,16 @@ KEEP extern const uint8_t* const unicodes_simfang_25_4bpp[] FONT_SEARCHTABLE_LOC
     0,
     0,
     unicodes_simfang_25_4bpp_9,
-    0,
+    unicodes_simfang_25_4bpp_10,
     unicodes_simfang_25_4bpp_11,
-    0,
+    unicodes_simfang_25_4bpp_12,
     unicodes_simfang_25_4bpp_13,
+    unicodes_simfang_25_4bpp_14,
+    unicodes_simfang_25_4bpp_15,
+    unicodes_simfang_25_4bpp_16,
     0,
-    0,
-    unicodes_simfang_25_4bpp_16
+    unicodes_simfang_25_4bpp_18,
+    unicodes_simfang_25_4bpp_19
 };
 FONT_KERNING_LOCATION_FLASH_PRAGMA
 KEEP extern const touchgfx::KerningNode kerning_simfang_25_4bpp[] FONT_KERNING_LOCATION_FLASH_ATTRIBUTE;
@@ -64,6 +99,6 @@ touchgfx::GeneratedFont& getFont_simfang_25_4bpp();
 
 touchgfx::GeneratedFont& getFont_simfang_25_4bpp()
 {
-    static touchgfx::GeneratedFont simfang_25_4bpp(glyphs_simfang_25_4bpp, 19, 28, 25, 0, 0, 4, 1, 0, 0, unicodes_simfang_25_4bpp, kerning_simfang_25_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont simfang_25_4bpp(glyphs_simfang_25_4bpp, 39, 28, 25, 0, 0, 4, 1, 0, 0, unicodes_simfang_25_4bpp, kerning_simfang_25_4bpp, 63, 0, 0, 0);
     return simfang_25_4bpp;
 }

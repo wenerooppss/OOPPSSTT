@@ -50,6 +50,30 @@ ScreenCurveViewBase::ScreenCurveViewBase()
     box_3.setVisible(false);
     add(box_3);
 
+    textArea2.setXY(113, 160);
+    textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2.setLinespacing(0);
+    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_J594));
+    add(textArea2);
+
+    textArea2_2.setXY(101, 275);
+    textArea2_2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2_2.setLinespacing(0);
+    textArea2_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PS7J));
+    add(textArea2_2);
+
+    textArea2_3.setXY(294, 275);
+    textArea2_3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2_3.setLinespacing(0);
+    textArea2_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_H6ZA));
+    add(textArea2_3);
+
+    textArea2_1.setXY(310, 160);
+    textArea2_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2_1.setLinespacing(0);
+    textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_I4E0));
+    add(textArea2_1);
+
     image_0.setXY(106, 90);
     image_0.setBitmap(touchgfx::Bitmap(BITMAP_CURVE_ID));
     add(image_0);

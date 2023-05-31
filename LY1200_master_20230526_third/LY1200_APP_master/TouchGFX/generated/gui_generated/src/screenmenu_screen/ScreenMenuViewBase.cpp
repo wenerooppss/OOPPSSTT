@@ -87,6 +87,42 @@ ScreenMenuViewBase::ScreenMenuViewBase()
     image_5.setXY(369, 198);
     image_5.setBitmap(touchgfx::Bitmap(BITMAP_UPDATE_ID));
     add(image_5);
+
+    textArea2.setXY(47, 146);
+    textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2.setLinespacing(0);
+    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_Q01U));
+    add(textArea2);
+
+    textArea2_1.setXY(205, 146);
+    textArea2_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2_1.setLinespacing(0);
+    textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_7KP4));
+    add(textArea2_1);
+
+    textArea2_2.setXY(367, 146);
+    textArea2_2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2_2.setLinespacing(0);
+    textArea2_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_O11H));
+    add(textArea2_2);
+
+    textArea2_3.setXY(39, 282);
+    textArea2_3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2_3.setLinespacing(0);
+    textArea2_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WOHD));
+    add(textArea2_3);
+
+    textArea2_4.setXY(207, 282);
+    textArea2_4.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2_4.setLinespacing(0);
+    textArea2_4.setTypedText(touchgfx::TypedText(T___SINGLEUSE_MIH0));
+    add(textArea2_4);
+
+    textArea2_5.setXY(367, 282);
+    textArea2_5.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    textArea2_5.setLinespacing(0);
+    textArea2_5.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CJDK));
+    add(textArea2_5);
 }
 
 ScreenMenuViewBase::~ScreenMenuViewBase()
@@ -125,6 +161,51 @@ void ScreenMenuViewBase::handleKeyEvent(uint8_t key)
         //When hardware button 12 clicked change screen to ScreenEffect
         //Go to ScreenEffect with no screen transition
         application().gotoScreenEffectScreenNoTransition();
+    
+    }
+
+    if(13 == key)
+    {
+        //Interaction4
+        //When hardware button 13 clicked change screen to ScreenControl
+        //Go to ScreenControl with no screen transition
+        application().gotoScreenControlScreenNoTransition();
+    
+    }
+
+    if(14 == key)
+    {
+        //Interaction5
+        //When hardware button 14 clicked change screen to ScreenFan
+        //Go to ScreenFan with no screen transition
+        application().gotoScreenFanScreenNoTransition();
+    
+    }
+
+    if(15 == key)
+    {
+        //Interaction6
+        //When hardware button 15 clicked change screen to ScreenStudio
+        //Go to ScreenStudio with no screen transition
+        application().gotoScreenStudioScreenNoTransition();
+    
+    }
+
+    if(17 == key)
+    {
+        //Interaction7
+        //When hardware button 17 clicked change screen to ScreenLanguage
+        //Go to ScreenLanguage with no screen transition
+        application().gotoScreenLanguageScreenNoTransition();
+    
+    }
+
+    if(18 == key)
+    {
+        //Interaction8
+        //When hardware button 18 clicked change screen to ScreenUpdate
+        //Go to ScreenUpdate with no screen transition
+        application().gotoScreenUpdateScreenNoTransition();
     
     }
 }

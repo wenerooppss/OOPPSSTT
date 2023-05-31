@@ -10,18 +10,13 @@ extern "C"
 			uint32_t sore = 0x00000|(Levels[4]<<16)|(Levels[3])<<12|(Levels[2]<<8)|(Levels[1]<<4)|(Levels[0]);
 		return 0x00000|(Levels[4]<<16)|(Levels[3])<<12|(Levels[2]<<8)|(Levels[1]<<4)|(Levels[0]);
 	}
-	uint64_t CCTcalVarition (uint8_t GFXKeys, uint8_t Levels[]){ //其他按键对应的值加进去？
+	uint64_t CCTcalVarition (uint8_t GFXKeys, uint8_t Levels[]){ //按键对应的值
 		switch ((GFXKeys&0xF0)>>4){
 			case 0x00:
 				return CCTcheckFinalCal(Levels);
 			case 0x01://knob1左移
-//				Levels[MenuLevel] += (-1)*min((GFXKeys&0x0F),Levels[MenuLevel]);
-//				return CCTcheckFinalCal(Levels);
 			  return 0x01;
 			case 0x02://knob1右移
-//				Levels[MenuLevel] += (GFXKeys&0x0F);
-//			  Levels[MenuLevel] = min(max(Levels[MenuLevel],0),5);
-//				return CCTcheckFinalCal(Levels);
 			  return 0x02;
 			
 			case 0x03://knob2左移
@@ -32,14 +27,13 @@ extern "C"
 			
 			case 0x07://key menu is pressed
 //				Levels[0]=0;
-//				MenuLevel=0;
 				return 0x0000c;//go to menu c只是数值 eg c d e 返回的还是menu0x00000.
 			
 			case 0x09://key effect is pressed
 //				Levels[0]=0;
 				return 0x0000e;
 		  case 0x0a://key back 
-				return 0x0000c;//go to menu
+				return 0x0000c;//go to menu 此c与0 区分开。
 		}
 	}
 }
@@ -91,10 +85,10 @@ void Screen1View::handleKeyEvent(uint8_t key)
 				 TemperatureUp();
 			 break;
 			 
-			 case 0x0000c://key:menu back
+			 case 0x0000c://key:menu，back
 				 application().gotoScreenMenuScreenNoTransition();
 			 break;
-			 case 0x0000e://key effect
+			 case 0x0000e://key：effect
 				 application().gotoScreenEffectScreenNoTransition();
 			 break;
 		 			 

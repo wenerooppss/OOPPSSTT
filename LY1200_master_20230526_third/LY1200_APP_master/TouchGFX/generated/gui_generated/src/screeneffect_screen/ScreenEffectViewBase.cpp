@@ -120,3 +120,15 @@ void ScreenEffectViewBase::setupScreen()
 {
 
 }
+
+void ScreenEffectViewBase::handleKeyEvent(uint8_t key)
+{
+    if(10 == key)
+    {
+        //Interaction1
+        //When hardware button 10 clicked change screen to ScreenEffectSet
+        //Go to ScreenEffectSet with no screen transition
+        application().gotoScreenEffectSetScreenNoTransition();
+    
+    }
+}

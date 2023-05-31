@@ -11,7 +11,7 @@ class Screen1View;
 class Screen1Presenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-	Screen1Presenter(Screen1View& v);//构造函数以view指针为入参
+	 Screen1Presenter(Screen1View& v);//构造函数以view指针为入参
 
     /**
      * The activate function is called automatically when this screen is "switched in"

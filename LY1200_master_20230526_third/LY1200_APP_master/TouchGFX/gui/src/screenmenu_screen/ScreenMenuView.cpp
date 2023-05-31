@@ -3,6 +3,8 @@
 #include "control_box.h"
 #define max(x,y) ( x>y?x:y )
 #define min(x,y) ( x<y?x:y )
+#define gotoCCT  0x0000d
+
 uint8_t MenuLevel = 0; 
 //先定义数组转int的函数 再加入数组
 extern "C"
@@ -11,7 +13,7 @@ extern "C"
 			uint32_t sore = 0x00000|(Levels[4]<<16)|(Levels[3])<<12|(Levels[2]<<8)|(Levels[1]<<4)|(Levels[0]);
 		return 0x00000|(Levels[4]<<16)|(Levels[3])<<12|(Levels[2]<<8)|(Levels[1]<<4)|(Levels[0]);
 	}
-	uint64_t calVarition (uint8_t GFXKeys, uint8_t Levels[]){ //其他按键对应的值加进去？
+	uint64_t calVarition (uint8_t GFXKeys, uint8_t Levels[]){ //按键对应的值
 		switch ((GFXKeys&0xF0)>>4){
 			case 0x00:
 				return checkFinalCal(Levels);
@@ -19,10 +21,10 @@ extern "C"
 				Levels[MenuLevel] += (-1)*min((GFXKeys&0x0F),Levels[MenuLevel]);
 				return checkFinalCal(Levels);
 			case 0x02:
-				Levels[MenuLevel] += (GFXKeys&0x0F);
+				Levels[MenuLevel] += (GFXKeys&0x0F);//旋转的相对值 GFXKeys的低位。
 			  Levels[MenuLevel] = min(max(Levels[MenuLevel],0),5);
 				return checkFinalCal(Levels);
-			
+						
 			case 0x06://KNOB1 is pressed
 				Levels[MenuLevel+1] = 1; //数组 下一个为1
 			  MenuLevel+=1;//层级加1
@@ -30,7 +32,7 @@ extern "C"
 			
 			case 0x08://key cct is pressed 				
  			  Levels[MenuLevel]=0x00;//将该层数组值置为0 该层00000.
-				return 0x0000d;//直接去cct界面
+				return gotoCCT;//直接去cct界面
 			case 0x09://key effect is pressed				
 				Levels[MenuLevel]=0x00;//将该层数组值置为0 该层00000.
 				return 0x0000e;//直接去effect界面
@@ -73,8 +75,7 @@ void ScreenMenuView::hideBox()
 void ScreenMenuView::handleKeyEvent(uint8_t key)
 {
 	ScreenMenuNumberGFX = calVarition(key,GFXLevels);	
-//ScreenMenuNumberGFX = min(max(ScreenMenuNumberGFX,0),5); //这里要做进位处理的考虑？
-	//if(key<10){key= min(max(0,key),9)}
+//ScreenMenuNumberGFX = min(max(ScreenMenuNumberGFX,0),5); //这里要做进位处理的考虑
      switch (ScreenMenuNumberGFX)  //这里屏幕转换要添加方框清0
    {
     case 0x00000://BOX
@@ -110,8 +111,9 @@ void ScreenMenuView::handleKeyEvent(uint8_t key)
 		break;
 		
 		//knob1 pressed Levels[0+1]=1
+		
 		case 0x00010:
-//			   application().gotoScreen1ScreenNoTransition();
+			   application().gotoScreenControlScreenNoTransition();
 		break;
 		case 0x00011:	//选中Curve
 			    application().gotoScreenCurveScreenNoTransition();
@@ -119,7 +121,7 @@ void ScreenMenuView::handleKeyEvent(uint8_t key)
 		//...
 		
 		
-		case 0x0000d:
+		case gotoCCT:
 			   application().gotoScreen1ScreenNoTransition();// go to cct
 		break;
 		case 0x0000e:

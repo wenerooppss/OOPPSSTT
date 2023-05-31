@@ -17,6 +17,10 @@ public:
 		{
 			Light_count=saveLight;
 		}	
+		void saveFrequency(int saveFrequency)
+		{
+			Frequency_count=saveFrequency;
+		}
 
 		int getTemperature()
 		{
@@ -25,6 +29,10 @@ public:
 		int  getLight()
 		{
 			return Light_count;
+		}
+		int getFrequency()
+		{
+			return Frequency_count;
 		}
 		//以上代码：数值得以保存于模型中，在屏幕切换时也可以保存它们
 		
@@ -38,8 +46,9 @@ public:
 		
 protected:
     ModelListener* modelListener;
-    int Temperature_count;
     int  Light_count;//
+    int Temperature_count;
+    int Frequency_count;
 };
 
 #endif // MODEL_HPP

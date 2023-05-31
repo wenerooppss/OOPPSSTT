@@ -14,18 +14,19 @@ extern "C"
 		switch ((GFXKeys&0xF0)>>4){
 			case 0x00:
 				return EffcheckFinalCal(Levels);
-			case 0x01://KNOB1
+			case 0x01://KNOB1 MenuLevel=0
 				Levels[MenuLevel] += (-1)*min((GFXKeys&0x0F),Levels[MenuLevel]);
 				return EffcheckFinalCal(Levels);
 			case 0x02:
 				Levels[MenuLevel] += (GFXKeys&0x0F);
-			  Levels[MenuLevel] = min(max(Levels[MenuLevel],0),7);//转的范围，应该写成循环？
+			  Levels[MenuLevel] = min(max(Levels[MenuLevel],0),7);//转的范围8个组件，应该写成循环？
 				return EffcheckFinalCal(Levels);
 			
 			case 0x06:
 				Levels[MenuLevel+1] = 1;
-			  MenuLevel+=1;//层级加1
+			  MenuLevel+=1;//层级加1 则为2
 				return EffcheckFinalCal(Levels);
+			
 			case 0x07://key menu
 				Levels[MenuLevel]=0;
 			  return 0x0000c;		
@@ -34,8 +35,7 @@ extern "C"
 			  return 0x0000d;			
 			
 			case 0x0a://key back
-				Levels[MenuLevel]=0;
-//			  MenuLevel-=1;		
+				Levels[MenuLevel]=0;	
 			  return 0x0000c;
 		}
 	}
@@ -124,20 +124,23 @@ void ScreenEffectView::handleKeyEvent(uint8_t key)
 		break;		
 		
 		//knob1 pressed Levels[0+1]=1
-//		case 0x00010:
-////			   application().gotoScreen1ScreenNoTransition();
-//		break;
-//		case 0x00011:	//选中Curve
-//			    application().gotoScreenCurveScreenNoTransition();
-//		break;
-//		//...
+		case 0x00010:
+		case 0x00011:
+		case 0x00012:
+		case 0x00013:
+		case 0x00014:
+		case 0x00015:
+		case 0x00016:
+		case 0x00017:		
+			   application().gotoScreenEffectSetScreenNoTransition();
+		break;
 		
+
 		
 		case 0x0000d:
 			   application().gotoScreen1ScreenNoTransition();// go to cct
-		break;
-		
-		case 0x0000c:
+		break;		
+		case 0x0000c://key menu key back
 			   application().gotoScreenMenuScreenNoTransition();// go to menu
 		break;
 		
