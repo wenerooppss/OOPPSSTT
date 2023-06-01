@@ -55,6 +55,8 @@ extern "C"
 				Levels[MenuLevel]=0;
 			  MenuLevel-=1;		
 			  return EffSetcheckFinalCal(Levels);//0x00000.0x00010
+			default:
+				return EffSetcheckFinalCal(Levels) ;
 		}
 	}
 }

@@ -22,7 +22,7 @@ extern "C"
 			  Levels[MenuLevel] = min(max(Levels[MenuLevel],0),7);//转的范围8个组件，应该写成循环？
 				return EffcheckFinalCal(Levels);
 			
-			case 0x06:
+			case 0x06:								
 				Levels[MenuLevel+1] = 1;
 			  MenuLevel+=1;//层级加1 则为2
 				return EffcheckFinalCal(Levels);
@@ -37,6 +37,8 @@ extern "C"
 			case 0x0a://key back
 				Levels[MenuLevel]=0;	
 			  return 0x0000c;
+			default:
+				return EffcheckFinalCal(Levels) ;
 		}
 	}
 }

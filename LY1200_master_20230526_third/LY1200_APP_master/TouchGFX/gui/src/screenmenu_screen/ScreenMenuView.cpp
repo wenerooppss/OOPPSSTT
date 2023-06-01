@@ -15,9 +15,9 @@ extern "C"
 	}
 	uint64_t calVarition (uint8_t GFXKeys, uint8_t Levels[]){ //按键对应的值
 		switch ((GFXKeys&0xF0)>>4){
-			case 0x00:
-				return checkFinalCal(Levels);
-			case 0x01://KNOB1左转
+		  case 0x00://无触发动作 
+			  return checkFinalCal(Levels);
+		  case 0x01://KNOB1左转
 				Levels[MenuLevel] += (-1)*min((GFXKeys&0x0F),Levels[MenuLevel]);
 				return checkFinalCal(Levels);
 			case 0x02:
@@ -36,7 +36,8 @@ extern "C"
 			case 0x09://key effect is pressed				
 				Levels[MenuLevel]=0x00;//将该层数组值置为0 该层00000.
 				return 0x0000e;//直接去effect界面
-
+    	default:
+			return checkFinalCal(Levels) ;
 		}
 	}
 }
@@ -76,7 +77,7 @@ void ScreenMenuView::handleKeyEvent(uint8_t key)
 {
 	ScreenMenuNumberGFX = calVarition(key,GFXLevels);	
 //ScreenMenuNumberGFX = min(max(ScreenMenuNumberGFX,0),5); //这里要做进位处理的考虑
-     switch (ScreenMenuNumberGFX)  //这里屏幕转换要添加方框清0
+     switch (ScreenMenuNumberGFX)  //屏幕转换之前添加方框清0
    {
     case 0x00000://BOX
 		   	hideBox();
@@ -118,7 +119,18 @@ void ScreenMenuView::handleKeyEvent(uint8_t key)
 		case 0x00011:	//选中Curve
 			    application().gotoScreenCurveScreenNoTransition();
 		break;
-		//...
+		case 0x00012:
+			   application().gotoScreenFanScreenNoTransition();
+		break;
+		case 0x00013:	//选中
+			    application().gotoScreenStudioScreenNoTransition();
+		break;
+		case 0x00014:
+			   application().gotoScreenLanguageScreenNoTransition();
+		break;
+		case 0x00015:	//选中
+			    application().gotoScreenUpdateScreenNoTransition();
+		break;		
 		
 		
 		case gotoCCT:

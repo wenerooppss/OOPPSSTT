@@ -95,6 +95,9 @@ ly1200_app_master/touchgfxconfiguration.o: \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterColor.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\canvas\AbstractPainterRGB565.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TextAreaWithWildcard.hpp \
+  ..\touchgfx\gui\include\gui\screenfan_screen\ScreenFanView.hpp \
+  ..\touchgfx\generated\gui_generated\include\gui_generated\screenfan_screen\ScreenFanViewBase.hpp \
+  ..\touchgfx\gui\include\gui\screenfan_screen\ScreenFanPresenter.hpp \
   ..\touchgfx\gui\include\gui\screencurve_screen\ScreenCurveView.hpp \
   ..\touchgfx\generated\gui_generated\include\gui_generated\screencurve_screen\ScreenCurveViewBase.hpp \
   ..\touchgfx\gui\include\gui\screencurve_screen\ScreenCurvePresenter.hpp \
@@ -107,6 +110,24 @@ ly1200_app_master/touchgfxconfiguration.o: \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\ImageProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\containers\progress_indicators\AbstractDirectionProgress.hpp \
   ..\middlewares\st\touchgfx\framework\include\touchgfx\widgets\TiledImage.hpp \
+  ..\touchgfx\gui\include\gui\screencontrol_screen\ScreenControlView.hpp \
+  ..\touchgfx\generated\gui_generated\include\gui_generated\screencontrol_screen\ScreenControlViewBase.hpp \
+  ..\touchgfx\gui\include\gui\screencontrol_screen\ScreenControlPresenter.hpp \
+  ..\touchgfx\gui\include\gui\screendmx_screen\ScreenDMXView.hpp \
+  ..\touchgfx\generated\gui_generated\include\gui_generated\screendmx_screen\ScreenDMXViewBase.hpp \
+  ..\touchgfx\gui\include\gui\screendmx_screen\ScreenDMXPresenter.hpp \
+  ..\touchgfx\gui\include\gui\screenbluetooth_screen\ScreenBluetoothView.hpp \
+  ..\touchgfx\generated\gui_generated\include\gui_generated\screenbluetooth_screen\ScreenBluetoothViewBase.hpp \
+  ..\touchgfx\gui\include\gui\screenbluetooth_screen\ScreenBluetoothPresenter.hpp \
+  ..\touchgfx\gui\include\gui\screenlanguage_screen\ScreenLanguageView.hpp \
+  ..\touchgfx\generated\gui_generated\include\gui_generated\screenlanguage_screen\ScreenLanguageViewBase.hpp \
+  ..\touchgfx\gui\include\gui\screenlanguage_screen\ScreenLanguagePresenter.hpp \
+  ..\touchgfx\gui\include\gui\screenstudio_screen\ScreenStudioView.hpp \
+  ..\touchgfx\generated\gui_generated\include\gui_generated\screenstudio_screen\ScreenStudioViewBase.hpp \
+  ..\touchgfx\gui\include\gui\screenstudio_screen\ScreenStudioPresenter.hpp \
+  ..\touchgfx\gui\include\gui\screenupdate_screen\ScreenUpdateView.hpp \
+  ..\touchgfx\generated\gui_generated\include\gui_generated\screenupdate_screen\ScreenUpdateViewBase.hpp \
+  ..\touchgfx\gui\include\gui\screenupdate_screen\ScreenUpdatePresenter.hpp \
   ..\touchgfx\generated\images\include\BitmapDatabase.hpp \
   ..\touchgfx\generated\images\include\images\BitmapDatabase.hpp \
   ..\TouchGFX\target\generated\STM32DMA.hpp \

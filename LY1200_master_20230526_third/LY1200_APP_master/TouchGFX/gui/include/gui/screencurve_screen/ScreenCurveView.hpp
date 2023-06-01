@@ -3,7 +3,7 @@
 
 #include <gui_generated/screencurve_screen/ScreenCurveViewBase.hpp>
 #include <gui/screencurve_screen/ScreenCurvePresenter.hpp>
-extern uint8_t MenuLevel ;//全局变量
+extern uint8_t MenuLevel ;//全局变量  此层为1
 class ScreenCurveView : public ScreenCurveViewBase
 {
 public:

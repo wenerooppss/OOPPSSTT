@@ -142,6 +142,32 @@ void FrontendApplicationBase::gotoScreenControlScreenNoTransitionImpl()
     touchgfx::makeTransition<ScreenControlView, ScreenControlPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
+// ScreenDMX
+
+void FrontendApplicationBase::gotoScreenDMXScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreenDMXScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenDMXScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ScreenDMXView, ScreenDMXPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// ScreenBluetooth
+
+void FrontendApplicationBase::gotoScreenBluetoothScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreenBluetoothScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenBluetoothScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ScreenBluetoothView, ScreenBluetoothPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
 // ScreenLanguage
 
 void FrontendApplicationBase::gotoScreenLanguageScreenNoTransition()

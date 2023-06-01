@@ -41,6 +41,12 @@ public:
     // ScreenControl
     void gotoScreenControlScreenNoTransition();
 
+    // ScreenDMX
+    void gotoScreenDMXScreenNoTransition();
+
+    // ScreenBluetooth
+    void gotoScreenBluetoothScreenNoTransition();
+
     // ScreenLanguage
     void gotoScreenLanguageScreenNoTransition();
 
@@ -75,6 +81,12 @@ protected:
 
     // ScreenControl
     void gotoScreenControlScreenNoTransitionImpl();
+
+    // ScreenDMX
+    void gotoScreenDMXScreenNoTransitionImpl();
+
+    // ScreenBluetooth
+    void gotoScreenBluetoothScreenNoTransitionImpl();
 
     // ScreenLanguage
     void gotoScreenLanguageScreenNoTransitionImpl();

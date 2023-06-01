@@ -27,6 +27,8 @@ extern "C"
 			  MenuLevel+=1;//层级加1 为2
 				return CurcheckFinalCal(Levels);
 			case 0x07:
+				Levels[MenuLevel]=0x00;//将该层数组值置为0 该层00000.
+			  MenuLevel=0;				
 				return 0x00001;//返回menu
 			case 0x08:
 				Levels[MenuLevel]=0x00;//将该层数组值置为0 该层00000.
@@ -43,6 +45,8 @@ extern "C"
 				Levels[MenuLevel]=0;//MenuLevel=1
 			  MenuLevel-=1;		
 			  return CurcheckFinalCal(Levels);//0x00001//返回menu
+    	default:
+				return CurcheckFinalCal(Levels) ;
 		}
 	}
 }
@@ -110,6 +114,15 @@ void ScreenCurveView::handleKeyEvent(uint8_t key)
 		case 0x00141:	//选中第四个组件
 			    application().gotoScreen1ScreenNoTransition();
 		break;
+		
+		//快捷键
+		case 0x0000d:
+			   application().gotoScreen1ScreenNoTransition();// go to cct
+		break;
+		case 0x0000e:
+			   application().gotoScreenEffectScreenNoTransition();// go to effect
+		break;
+					
 		
 		default:
 			break;

@@ -66,3 +66,24 @@ void ScreenControlViewBase::setupScreen()
 {
 
 }
+
+void ScreenControlViewBase::handleKeyEvent(uint8_t key)
+{
+    if(10 == key)
+    {
+        //Interaction1
+        //When hardware button 10 clicked change screen to ScreenBluetooth
+        //Go to ScreenBluetooth with no screen transition
+        application().gotoScreenBluetoothScreenNoTransition();
+    
+    }
+
+    if(11 == key)
+    {
+        //Interaction2
+        //When hardware button 11 clicked change screen to ScreenDMX
+        //Go to ScreenDMX with no screen transition
+        application().gotoScreenDMXScreenNoTransition();
+    
+    }
+}

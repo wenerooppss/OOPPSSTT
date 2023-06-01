@@ -501,8 +501,6 @@ void menuTask_Entry(void *argument)
 		//获取消息
     if(osMessageQueueGet(sysDataQueue_AppHandle, (void *)&sys_Data_getQueue,NULL,portMAX_DELAY)==osOK)
     { //获取消息成功
-      
-
 			
 //			//对数值进行处�??
 //			sys_Data_getQueue.cct_Parament.brightness+=(knob_Data1.variation)/1000.0;
