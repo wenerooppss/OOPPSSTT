@@ -11,16 +11,12 @@ Model::Model() : modelListener(0),Light_count(15),Temperature_count(2700),Freque
 {
 
 }
-
-extern osMessageQueueId_t sysDataQueue_AppHandle;
+//周期性地从消息队列中获取数据，并更新其中某些参数，然后再将更新后的数据放回消息队列中
+extern osMessageQueueId_t sysDataQueue_AppHandle;//消息队列
 void Model::tick()
 {
-// if(modelListener !=0)
-// {
-//	 modelListener->Temperature_count(getTemperature());
-// }
-	struct SYS_DATA sys_Data_getQueue;
-			//获取消息
+	struct SYS_DATA sys_Data_getQueue;//（void*)&指向需要放入消息队列的消息结构体
+		//获取消息
 	if(osMessageQueueGet(sysDataQueue_AppHandle, (void *)&sys_Data_getQueue,NULL,portMAX_DELAY)==osOK)
 	{ //获取消息成功
 		sys_Data_getQueue.cct_Parament.brightness = (getLight()/100.0);
@@ -29,8 +25,7 @@ void Model::tick()
 	
 	//放入消息 
 	if(osMessageQueuePut(sysDataQueue_AppHandle, &sys_Data_getQueue,0,portMAX_DELAY)==osOK)
-	{ //放入消息成功
-		
+	{ //放入消息成功		
 	}
 	
 }

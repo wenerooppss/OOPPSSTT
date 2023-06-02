@@ -1420,9 +1420,9 @@
             "Height": 20,
             "Visible": false,
             "Color": {
-              "Red": 149,
-              "Green": 225,
-              "Blue": 230
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
             }
           },
           {

@@ -10,7 +10,6 @@ uint8_t MenuLevel = 0;
 extern "C"
 {	
 	uint32_t checkFinalCal(uint8_t Levels[]){	
-			uint32_t sore = 0x00000|(Levels[4]<<16)|(Levels[3])<<12|(Levels[2]<<8)|(Levels[1]<<4)|(Levels[0]);
 		return 0x00000|(Levels[4]<<16)|(Levels[3])<<12|(Levels[2]<<8)|(Levels[1]<<4)|(Levels[0]);
 	}
 	uint64_t calVarition (uint8_t GFXKeys, uint8_t Levels[]){ //按键对应的值

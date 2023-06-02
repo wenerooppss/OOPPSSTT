@@ -23,7 +23,7 @@ using namespace touchgfx;
 //	
 //}
 uint32_t ScreenMenuNumberGFX = 0;
-uint8_t VariLocation  = 0 ;
+//uint8_t VariLocation  = 0 ;
 void  KeyController::init ()//初始化
 {}
 	
@@ -52,9 +52,10 @@ extern "C"
 				CalVariationGFX|=(15-(box_Data_gfx->knob2.mapping_Values));
 			}else{
 				CalVariationGFX|=(0x04<<4);//按钮向右
-				CalVariationGFX|=(box_Data_gfx->knob2.mapping_Values);
+				CalVariationGFX|=min((box_Data_gfx->knob2.mapping_Values),15);
 			}
 			box_Data_getQueue->knob2.mapping_Values =0;
+			box_Data_getQueue->knob2.direction = 0;			
 			box_Data_getQueue->knob2.knob_State =0;
 			box_Data_getQueue->knob2.clear_Flag =1;
 			return CalVariationGFX ;
@@ -81,7 +82,7 @@ extern "C"
 					  break;
 				}
 				box_Data_getQueue->key.state = 0;//按键状态复位
-				box_Data_getQueue->key.value = 0x0f;//置为不需要的0x0f
+				box_Data_getQueue->key.value = 0x0f;//置为不需要的0x0f 
 			box_Data_getQueue->key.clear_Flag = 1;
 				return CalVariationGFX ;
 			}

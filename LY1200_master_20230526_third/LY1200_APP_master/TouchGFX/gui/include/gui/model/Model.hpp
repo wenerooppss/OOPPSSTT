@@ -22,6 +22,7 @@ public:
 			Frequency_count=saveFrequency;
 		}
 
+		
 		int getTemperature()
 		{
 			return Temperature_count;
@@ -34,7 +35,7 @@ public:
 		{
 			return Frequency_count;
 		}
-		//以上代码：数值得以保存于模型中，在屏幕切换时也可以保存它们
+		//以上代码：数值得以保存于模型中，可检索数据，访问数值。
 		
 		
 		    void bind(ModelListener* listener)
@@ -45,10 +46,10 @@ public:
     void tick();
 		
 protected:
-    ModelListener* modelListener;
-    int  Light_count;//
-    int Temperature_count;
-    int Frequency_count;
+	ModelListener* modelListener;
+	int  Light_count;//
+	int Temperature_count;
+	int Frequency_count;
 };
 
 #endif // MODEL_HPP

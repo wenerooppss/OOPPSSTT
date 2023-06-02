@@ -36,6 +36,7 @@ public:
 			 model->saveLight(Light_count);
 		}
 		
+		
 		int getTemperature()
 		{
 		  return model->getTemperature();
