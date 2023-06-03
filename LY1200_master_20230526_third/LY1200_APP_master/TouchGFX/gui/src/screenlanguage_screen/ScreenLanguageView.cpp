@@ -1,4 +1,5 @@
 #include <gui/screenlanguage_screen/ScreenLanguageView.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 #include "math.h"
 #include "control_box.h"
 #define max(x,y) ( x>y?x:y )
@@ -92,11 +93,14 @@ void ScreenLanguageView::handleKeyEvent(uint8_t key)
 		
 		
 		//knob1 pressed 
-		case 0x00114:	//按中第一个组件 Bluetooth
-//			    application().gotoScreenBluetoothScreenNoTransition();
+		case 0x00114:	//按中第一个组件 Chinese
+			 Texts::setLanguage(GB);
+       invalidate();
 		break;
-		case 0x00124://按中第二个组件 DMX
-//			    application().gotoScreenDMXScreenNoTransition();
+		
+		case 0x00124://按中第二个组件 English
+        Texts::setLanguage(EN);
+        invalidate();
 		break;			
 		
 		//快捷键

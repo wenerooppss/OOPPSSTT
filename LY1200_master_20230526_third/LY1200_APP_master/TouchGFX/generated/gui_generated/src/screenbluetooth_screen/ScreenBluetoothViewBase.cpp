@@ -16,7 +16,7 @@ ScreenBluetoothViewBase::ScreenBluetoothViewBase()
     box1.setColor(touchgfx::Color::getColorFromRGB(41, 36, 36));
     add(box1);
 
-    textArea1.setXY(170, 18);
+    textArea1.setXY(135, 22);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_G1QM));
@@ -40,13 +40,13 @@ ScreenBluetoothViewBase::ScreenBluetoothViewBase()
     box_0.setVisible(false);
     add(box_0);
 
-    textArea2.setXY(197, 110);
+    textArea2.setXY(162, 110);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8J4R));
     add(textArea2);
 
-    textArea2_1.setXY(145, 194);
+    textArea2_1.setXY(110, 194);
     textArea2_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2_1.setLinespacing(0);
     textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1PPZ));

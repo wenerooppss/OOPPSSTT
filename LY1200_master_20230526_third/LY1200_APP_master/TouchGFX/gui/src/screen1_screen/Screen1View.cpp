@@ -44,8 +44,8 @@ void Screen1View::setupScreen()
 {
 	Screen1ViewBase::setupScreen();
     
-	Temperature_count=presenter->getTemperature();//刷新新界面，用指针presenter 读取记录好的数值
-	Light_count=presenter->getLight();	
+	Temperature_count=presenter->getCCTTemperature();//刷新新界面，用指针presenter 读取记录好的数值
+	Light_count=presenter->getCCTLight();	
 
     //通配符显示
   Unicode::snprintf(LightTextPgBuffer, LIGHTTEXTPG_SIZE, "%d", Light_count);
@@ -59,8 +59,8 @@ void Screen1View::tearDownScreen()
 {
 	Screen1ViewBase::tearDownScreen();//离开此界面，用指针presenter 保存修改的数值
 	
-	presenter->saveLight(Light_count);
-	presenter->saveTemperature(Temperature_count);
+	presenter->saveCCTLight(Light_count);
+	presenter->saveCCTTemperature(Temperature_count);
 }
 
 void Screen1View::handleKeyEvent(uint8_t key)
@@ -99,7 +99,7 @@ void Screen1View::LightDown()
 {   
 	 Light_count--;
 	 Light_count=max(Light_count,0);
-	 presenter->saveLight(Light_count);//通过presenter保存到mode
+	 presenter->saveCCTLight(Light_count);//通过presenter保存到mode 函数中直接进行采样
 	 touchgfx_printf("Light_count %d\r\n", Light_count);//打印数据
 	 LightingProgress.setValue(Light_count);//给进度条设置亮度的值
 	 LightingProgress.invalidate(); //更新显示进度条的值
@@ -115,7 +115,7 @@ void Screen1View::LightUp()
 {
 	 Light_count++;
 	 Light_count=min(Light_count,100);
-	 presenter->saveLight(Light_count);
+	 presenter->saveCCTLight(Light_count);
 	 touchgfx_printf("Light_count %d\r\n", Light_count);//打印数据
 	 LightingProgress.setValue(Light_count);//给进度条设置亮度的值
 	 LightingProgress.invalidate(); //更新显示进度条的值
@@ -130,7 +130,7 @@ void Screen1View::TemperatureDown()
 {
 	 Temperature_count-= 50;
 	 Temperature_count=max(Temperature_count,2700);
-	 presenter->saveTemperature(Temperature_count);
+	 presenter->saveCCTTemperature(Temperature_count);
 	 touchgfx_printf("Temperature_count %ld \r\n", Temperature_count);//打印数据
 	 TemperatureProgress.setValue(Temperature_count);//给进度条设置色温的值
 	 TemperatureProgress.invalidate(); //更新显示半环进度条的值	
@@ -142,7 +142,7 @@ void Screen1View::TemperatureUp()
 {
 	 Temperature_count+= 50;
 	 Temperature_count=min(Temperature_count,6500);
-	 presenter->saveTemperature(Temperature_count);
+	 presenter->saveCCTTemperature(Temperature_count);
 	touchgfx_printf("Temperature_count %ld \r\n", Temperature_count);//打印数据
 	TemperatureProgress.setValue(Temperature_count);//给进度条设置色温的值
 	TemperatureProgress.invalidate(); //更新显示半环进度条的值

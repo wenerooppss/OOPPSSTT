@@ -4,16 +4,16 @@
 #define max(x,y) (x>y?x:y)
 #define min(x,y) (x<y?x:y)
 uint8_t FrequencySeting=0; //频率调节标志位
+uint8_t EffectType;//特效类别标志位
 extern "C"
 {
 	uint32_t EffSetcheckFinalCal(uint8_t Levels[]){	
 		return 0x00000|(Levels[4]<<16)|(Levels[3])<<12|(Levels[2]<<8)|(Levels[1]<<4)|(Levels[0]);
 	}
 	uint64_t EffSetcalVarition (uint8_t GFXKeys, uint8_t Levels[]){ //按键对应的值
-	
+//	  EffectType=Levels[0];//记录选中特效编号0-7.
 		switch ((GFXKeys&0xF0)>>4){
-			
-			case 0x00:
+			case 0x00:				
 				return EffSetcheckFinalCal(Levels);//0x10 11 12 13 14 15 16 17.
 			
 			case 0x01://knob1左移
@@ -79,15 +79,59 @@ ScreenEffectSetView::ScreenEffectSetView()
 
 }
 
+void ScreenEffectSetView::GetEffectType(uint8_t EffectType)
+{
+	switch(EffectType){ //根据传入参数获取不同值
+		case 0:
+			Temperature_count=presenter->getPbadBulbsTemperature();//刷新新界面，用指针presenter 读取记录好的数值
+			Light_count=presenter->getPbadBulbsLight();	
+			Frequency_count=presenter->getPbadBulbsFrequency();
+		break;
+		
+		case 1:
+			Temperature_count=presenter->getPexplodeTemperature();//刷新新界面，用指针presenter 读取记录好的数值
+			Light_count=presenter->getPexplodeLight();	
+			Frequency_count=presenter->getPexplodeFrequency();			
+		break;
+				//...
+		
+		default:
+		break;
+		//...
+	}
+}
+
+void ScreenEffectSetView::SaveEffectType(uint8_t ViewEffectType)
+{
+	switch(ViewEffectType){ //根据传入参数获取不同值
+		case 0:
+			presenter->savePbadBulbsLight(Light_count);
+			presenter->savePbadBulbsTemperature(Temperature_count);
+			presenter->savePbadBulbsFrequency(Frequency_count);
+		break;
+		
+		case 1:			
+			presenter->savePexplodeLight(Light_count);
+			presenter->savePexplodeTemperature(Temperature_count);
+			presenter->savePexplodeFrequency(Frequency_count);			
+			break;
+			//....	
+		default:
+			break;
+
+	}
+}
+
+
 void ScreenEffectSetView::setupScreen()
 {
 	ScreenEffectSetViewBase::setupScreen();
-	//
 	
-	
-	Temperature_count=presenter->getTemperature();//刷新新界面，用指针presenter 读取记录好的数值
-	Light_count=presenter->getLight();	
-	Frequency_count=presenter->getFrequency();
+	//做标志位判断 确定存具体哪一个特效的.（枚举）
+	GetEffectType(EffectType);	
+////	Temperature_count=presenter->getTemperature();//刷新新界面，用指针presenter 读取记录好的数值
+////	Light_count=presenter->getLight();	
+////	Frequency_count=presenter->getFrequency();
 
 	//通配符显示
   Unicode::snprintf(LightTextPgBuffer, LIGHTTEXTPG_SIZE, "%d", Light_count);
@@ -102,10 +146,12 @@ void ScreenEffectSetView::setupScreen()
 void ScreenEffectSetView::tearDownScreen()
 {
 	ScreenEffectSetViewBase::tearDownScreen();
+	//函数保存当前三种值，很多种不同特效的
+	SaveEffectType(EffectType);	
 	
-	presenter->saveLight(Light_count);
-	presenter->saveTemperature(Temperature_count);
-	presenter->saveFrequency(Frequency_count);
+////	presenter->saveLight(Light_count);
+////	presenter->saveTemperature(Temperature_count);
+////	presenter->saveFrequency(Frequency_count);
 }
 
 void ScreenEffectSetView::handleKeyEvent(uint8_t key)
@@ -164,28 +210,30 @@ void ScreenEffectSetView::handleKeyEvent(uint8_t key)
 
 void ScreenEffectSetView::LightDown()
 {   
-	 Light_count--;
-	 Light_count=max(Light_count,0);
-	 touchgfx_printf("Light_count %d\r\n", Light_count);//打印数据
-	 LightingProgress.setValue(Light_count);//给进度条设置亮度的值
-	 LightingProgress.invalidate(); //更新显示进度条的值
-	 //通配符显示
-	 Unicode::snprintf(LightTextPgBuffer, LIGHTTEXTPG_SIZE, "%d", Light_count);
-	 LightTextPg.invalidate();//更新显示		
+	Light_count--;
+	Light_count=max(Light_count,0);
+	SaveEffectType(EffectType);	
+	touchgfx_printf("Light_count %d\r\n", Light_count);//打印数据
+	LightingProgress.setValue(Light_count);//给进度条设置亮度的值
+	LightingProgress.invalidate(); //更新显示进度条的值
+	//通配符显示
+	Unicode::snprintf(LightTextPgBuffer, LIGHTTEXTPG_SIZE, "%d", Light_count);
+	LightTextPg.invalidate();//更新显示		
 	
 //     LightingTextPg.updateValue(Light_count, 1000);
 //     LightingTextPg.invalidate(); //文本进度条
 }
 void ScreenEffectSetView::LightUp()
 {
-		Light_count++;
-		Light_count=min(Light_count,100);
-		touchgfx_printf("Light_count %d\r\n", Light_count);//打印数据
-		LightingProgress.setValue(Light_count);//给进度条设置亮度的值
-		LightingProgress.invalidate(); //更新显示进度条的值
-    //通配符显示
-    Unicode::snprintf(LightTextPgBuffer, LIGHTTEXTPG_SIZE, "%d", Light_count);
-	  LightTextPg.invalidate();//更新显示	
+	Light_count++;
+	Light_count=min(Light_count,100);
+	SaveEffectType(EffectType);	
+	touchgfx_printf("Light_count %d\r\n", Light_count);//打印数据
+	LightingProgress.setValue(Light_count);//给进度条设置亮度的值
+	LightingProgress.invalidate(); //更新显示进度条的值
+	//通配符显示
+	Unicode::snprintf(LightTextPgBuffer, LIGHTTEXTPG_SIZE, "%d", Light_count);
+	LightTextPg.invalidate();//更新显示	
 //     LightingTextPg.updateValue(Light_count, 1000);
 //     LightingTextPg.invalidate(); //文本进度条	
 }
@@ -194,6 +242,7 @@ void ScreenEffectSetView::TemperatureDown()
 {
 	Temperature_count-= 50;
 	Temperature_count=max(Temperature_count,2700);
+	SaveEffectType(EffectType);	
 	touchgfx_printf("Temperature_count %ld \r\n", Temperature_count);//打印数据
 	TemperatureProgress.setValue(Temperature_count);//给进度条设置色温的值
 	TemperatureProgress.invalidate(); //更新显示半环进度条的值
@@ -205,6 +254,7 @@ void ScreenEffectSetView::TemperatureUp()
 {
 	Temperature_count+= 50;
 	Temperature_count=min(Temperature_count,6500);
+	SaveEffectType(EffectType);	
 	touchgfx_printf("Temperature_count %ld \r\n", Temperature_count);//打印数据
 	TemperatureProgress.setValue(Temperature_count);//给进度条设置色温的值
 	TemperatureProgress.invalidate(); //更新显示半环进度条的值
@@ -216,7 +266,8 @@ void ScreenEffectSetView::FrequencyDown()
 {	
 	Frequency_count--;
 	Frequency_count=max(Frequency_count,0);
-	presenter->saveFrequency(Frequency_count);
+	SaveEffectType(EffectType);	
+//	presenter->saveFrequency(Frequency_count);//特效较多时，增加很多函数，用其他枚举
 	touchgfx_printf("Frequency_count %ld \r\n", Frequency_count);//打印数据
 	FrequencyProgress.setValue(Frequency_count);//给进度条设置值
 	FrequencyProgress.invalidate(); //更新显示进度条的值
@@ -225,7 +276,7 @@ void ScreenEffectSetView::FrequencyUp()
 {
 	Frequency_count++;
 	Frequency_count=min(Frequency_count,10);
-	presenter->saveFrequency(Frequency_count);
+	SaveEffectType(EffectType);	
 	touchgfx_printf("Frequency_count %ld \r\n", Frequency_count);//打印数据
 	FrequencyProgress.setValue(Frequency_count);//给进度条设置值
 	FrequencyProgress.invalidate(); //更新显示进度条的值	

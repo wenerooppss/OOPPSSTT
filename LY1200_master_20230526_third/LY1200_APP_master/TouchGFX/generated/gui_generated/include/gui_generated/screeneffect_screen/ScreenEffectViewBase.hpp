@@ -47,6 +47,14 @@ protected:
     touchgfx::Image image_5;
     touchgfx::Image image_6;
     touchgfx::Image image_7;
+    touchgfx::TextArea textArea;
+    touchgfx::TextArea textArea_1;
+    touchgfx::TextArea textArea_2;
+    touchgfx::TextArea textArea_3;
+    touchgfx::TextArea textArea_4;
+    touchgfx::TextArea textArea_5;
+    touchgfx::TextArea textArea_6;
+    touchgfx::TextArea textArea_7;
 
 private:
 

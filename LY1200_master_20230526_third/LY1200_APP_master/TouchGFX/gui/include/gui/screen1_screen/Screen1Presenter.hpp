@@ -8,7 +8,7 @@ using namespace touchgfx;
 
 class Screen1View;
 
-class Screen1Presenter : public touchgfx::Presenter, public ModelListener
+class Screen1Presenter : public touchgfx::Presenter, public ModelListener//继承了ModelListener类
 {
 public:
 	 Screen1Presenter(Screen1View& v);//构造函数以view指针为入参
@@ -25,24 +25,26 @@ public:
      */
     virtual void deactivate();
 
+//可以重写虚函数？？？ 通知view应更新显示的数值CCT_L...外部向UI传值
+
     //从视图访问模型中的数据，加载保存模型中的数据
-    void saveTemperature(int Temperature_count)
+    void saveCCTTemperature(int CCT_Temperature_count)
 		{
-			model->saveTemperature(Temperature_count);
+			model->saveCCTTemperature(CCT_Temperature_count);
 		}
 		
-		void saveLight(int Light_count)
+		void saveCCTLight(int CCT_Light_count)
 		{
-			 model->saveLight(Light_count);
+			 model->saveCCTLight(CCT_Light_count);
 		}
 		
-		int getTemperature()
+		int getCCTTemperature()
 		{
-		  return model->getTemperature();
+		  return model->getCCTTemperature();
 		}
-		int getLight()
+		int getCCTLight()
 		{
-			return model->getLight();
+			return model->getCCTLight();
 		}
 		
 		

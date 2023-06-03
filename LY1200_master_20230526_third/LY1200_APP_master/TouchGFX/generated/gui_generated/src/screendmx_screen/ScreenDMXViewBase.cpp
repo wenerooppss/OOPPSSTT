@@ -16,7 +16,7 @@ ScreenDMXViewBase::ScreenDMXViewBase()
     box1.setColor(touchgfx::Color::getColorFromRGB(41, 36, 36));
     add(box1);
 
-    textArea1.setXY(179, 21);
+    textArea1.setXY(136, 19);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IF06));
@@ -40,13 +40,13 @@ ScreenDMXViewBase::ScreenDMXViewBase()
     box_1.setVisible(false);
     add(box_1);
 
-    textArea2.setXY(180, 110);
+    textArea2.setXY(127, 110);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_2KXF));
     add(textArea2);
 
-    textArea2_1.setXY(144, 200);
+    textArea2_1.setXY(84, 200);
     textArea2_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2_1.setLinespacing(0);
     textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A3ON));

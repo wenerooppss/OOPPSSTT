@@ -16,7 +16,7 @@ ScreenLanguageViewBase::ScreenLanguageViewBase()
     box1.setColor(touchgfx::Color::getColorFromRGB(41, 36, 36));
     add(box1);
 
-    textArea1.setXY(205, 13);
+    textArea1.setXY(145, 17);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_M5RJ));
@@ -61,4 +61,27 @@ ScreenLanguageViewBase::~ScreenLanguageViewBase()
 void ScreenLanguageViewBase::setupScreen()
 {
 
+}
+
+void ScreenLanguageViewBase::handleKeyEvent(uint8_t key)
+{
+    if(10 == key)
+    {
+        //Interaction1
+        //When hardware button 10 clicked set language GB
+        //Change language to GB
+        Texts::setLanguage(GB);
+        invalidate();
+    
+    }
+
+    if(11 == key)
+    {
+        //Interaction2
+        //When hardware button 11 clicked set language EN
+        //Change language to EN
+        Texts::setLanguage(EN);
+        invalidate();
+    
+    }
 }

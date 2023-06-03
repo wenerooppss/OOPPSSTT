@@ -25,13 +25,13 @@ Screen1ViewBase::Screen1ViewBase()
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VFHT));
     add(textArea1);
 
-    textArea2.setXY(87, 43);
+    textArea2.setXY(56, 43);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_80PN));
     add(textArea2);
 
-    textArea3.setXY(341, 43);
+    textArea3.setXY(309, 43);
     textArea3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea3.setLinespacing(0);
     textArea3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CP7Q));

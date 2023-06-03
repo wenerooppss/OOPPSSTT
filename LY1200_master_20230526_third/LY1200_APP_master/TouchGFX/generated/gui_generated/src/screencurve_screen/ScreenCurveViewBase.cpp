@@ -16,7 +16,7 @@ ScreenCurveViewBase::ScreenCurveViewBase()
     box1.setColor(touchgfx::Color::getColorFromRGB(41, 36, 36));
     add(box1);
 
-    textArea1.setXY(170, 18);
+    textArea1.setXY(138, 20);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T7S8));
@@ -50,25 +50,25 @@ ScreenCurveViewBase::ScreenCurveViewBase()
     box_3.setVisible(false);
     add(box_3);
 
-    textArea2.setXY(113, 160);
+    textArea2.setXY(76, 160);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_J594));
     add(textArea2);
 
-    textArea2_2.setXY(101, 275);
+    textArea2_2.setXY(63, 275);
     textArea2_2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2_2.setLinespacing(0);
     textArea2_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PS7J));
     add(textArea2_2);
 
-    textArea2_3.setXY(294, 275);
+    textArea2_3.setXY(263, 275);
     textArea2_3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2_3.setLinespacing(0);
     textArea2_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_H6ZA));
     add(textArea2_3);
 
-    textArea2_1.setXY(310, 160);
+    textArea2_1.setXY(288, 160);
     textArea2_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2_1.setLinespacing(0);
     textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_I4E0));

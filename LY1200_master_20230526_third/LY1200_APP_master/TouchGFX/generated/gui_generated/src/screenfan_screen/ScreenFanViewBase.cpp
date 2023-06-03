@@ -66,25 +66,25 @@ ScreenFanViewBase::ScreenFanViewBase()
     image_3.setBitmap(touchgfx::Bitmap(BITMAP_FAN_ID));
     add(image_3);
 
-    textArea2.setXY(113, 146);
+    textArea2.setXY(88, 152);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_J7D7));
     add(textArea2);
 
-    textArea2_1.setXY(317, 146);
+    textArea2_1.setXY(292, 152);
     textArea2_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2_1.setLinespacing(0);
     textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_E64Y));
     add(textArea2_1);
 
-    textArea2_2.setXY(113, 279);
+    textArea2_2.setXY(88, 273);
     textArea2_2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2_2.setLinespacing(0);
     textArea2_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_CZ82));
     add(textArea2_2);
 
-    textArea2_3.setXY(317, 273);
+    textArea2_3.setXY(292, 273);
     textArea2_3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2_3.setLinespacing(0);
     textArea2_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZZ1H));

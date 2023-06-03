@@ -5,10 +5,10 @@
 
 namespace touchgfx 
 {
-	extern int component_Location;//组件位置i
-	extern int tier_Location;//层级位置j
-	//extern int Knob_Pressed;//按下标志
-	extern int Screen_id;//界面标识
+//	extern int component_Location;//组件位置i
+//	extern int tier_Location;//层级位置j
+//	//extern int Knob_Pressed;//按下标志
+//	extern int Screen_id;//界面标识
 	
 	class KeyController : public  ButtonController 
 	{
@@ -20,6 +20,6 @@ namespace touchgfx
 		virtual bool sample(uint8_t& key); 
 	};
 }
-int My_Place();//声明计算显示位置
+//int My_Place();//声明计算显示位置
 
 #endif

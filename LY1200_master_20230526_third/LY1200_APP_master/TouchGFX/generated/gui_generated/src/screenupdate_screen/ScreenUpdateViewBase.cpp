@@ -16,7 +16,7 @@ ScreenUpdateViewBase::ScreenUpdateViewBase()
     box1.setColor(touchgfx::Color::getColorFromRGB(41, 36, 36));
     add(box1);
 
-    textArea1.setXY(162, 14);
+    textArea1.setXY(145, 14);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AKEW));
@@ -31,13 +31,13 @@ ScreenUpdateViewBase::ScreenUpdateViewBase()
     box_0.setVisible(false);
     add(box_0);
 
-    textArea2.setXY(162, 90);
+    textArea2.setXY(127, 90);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_IUW7));
     add(textArea2);
 
-    textArea3.setXY(40, 160);
+    textArea3.setXY(35, 170);
     textArea3.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea3.setLinespacing(0);
     textArea3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZAPW));

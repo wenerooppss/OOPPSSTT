@@ -16,7 +16,7 @@ ScreenControlViewBase::ScreenControlViewBase()
     box1.setColor(touchgfx::Color::getColorFromRGB(41, 36, 36));
     add(box1);
 
-    textArea1.setXY(170, 17);
+    textArea1.setXY(135, 21);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BFZR));
@@ -44,13 +44,13 @@ ScreenControlViewBase::ScreenControlViewBase()
     image1_1.setBitmap(touchgfx::Bitmap(BITMAP_DMX_PRESS_ID));
     add(image1_1);
 
-    textArea2.setXY(75, 243);
+    textArea2.setXY(50, 243);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_B603));
     add(textArea2);
 
-    textArea2_1.setXY(315, 243);
+    textArea2_1.setXY(294, 243);
     textArea2_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2_1.setLinespacing(0);
     textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_D6UE));

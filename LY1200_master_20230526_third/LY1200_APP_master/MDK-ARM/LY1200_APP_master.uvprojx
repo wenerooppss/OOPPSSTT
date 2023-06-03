@@ -1729,6 +1729,11 @@
               <FilePath>../touchgfx/generated/fonts/src/font_simfang_17_4bpp_17.cpp</FilePath>
             </File>
             <File>
+              <FileName>Font_simfang_17_4bpp_18.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/fonts/src/font_simfang_17_4bpp_18.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Font_simfang_17_4bpp_19.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/fonts/src/font_simfang_17_4bpp_19.cpp</FilePath>
@@ -2002,6 +2007,11 @@
               <FileName>Kerning_simfang_35_4bpp.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../touchgfx/generated/fonts/src/kerning_simfang_35_4bpp.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>LanguageEn.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../touchgfx/generated/texts/src/languageen.cpp</FilePath>
             </File>
             <File>
               <FileName>LanguageGb.cpp</FileName>
